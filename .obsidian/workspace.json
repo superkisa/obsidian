@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The CC program.md",
+                "file": "Computer Vision/The CC program.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The CC program.md",
+                "file": "Computer Vision/The CC program.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The CC program.md",
+                "file": "Computer Vision/The CC program.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The CC program.md"
+                "file": "Computer Vision/The CC program.md"
               }
             }
           }
@@ -146,9 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "274f535c03b1b01c",
+  "active": "e476cf5e6b7598c7",
   "lastOpenFiles": [
-    "The CC program.md",
+    "Computer Vision/The CC program.md",
     "Computer Vision"
   ]
 }
