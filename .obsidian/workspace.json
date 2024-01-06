@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0a761e946f9fa371",
+        "id": "3d409af57d84d283",
         "type": "tabs",
         "children": [
           {
-            "id": "274f535c03b1b01c",
+            "id": "341f449f9576438a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Vision/The CC program.md",
+                "file": "NLP/NLP pororam.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Vision/The CC program.md",
+                "file": "NLP/NLP pororam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Vision/The CC program.md",
+                "file": "NLP/NLP pororam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Vision/The CC program.md"
+                "file": "NLP/NLP pororam.md"
               }
             }
           }
@@ -146,9 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e476cf5e6b7598c7",
+  "active": "341f449f9576438a",
   "lastOpenFiles": [
     "Computer Vision/The CC program.md",
+    "NLP/NLP pororam.md",
+    "Untitled.canvas",
+    "NLP",
+    "Computer Vision/Libraries for Computer Vision in Python.md",
+    "Image.md",
+    "Image representation in computer. Image channels. Biological reasons..md",
+    "Computer Vision/Image representation in computer. Image channels. Biological reasons..md",
     "Computer Vision"
   ]
 }

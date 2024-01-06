@@ -1,5 +1,5 @@
 1. Image representation in computer. Image channels. Biological reasons.
-2. Libraries for Computer Vision in Python.
+2. [[Libraries for Computer Vision in Python]].
 3. Image histogram, histogram equalization, gamma correction.
 4. Convolution operation definition, hyperparameters and effective implementation details.
 5. DL frameworks: overall structure and examples.
