@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/NLP pororam.md",
+                "file": "Computer Vision/The CC program.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/NLP pororam.md",
+                "file": "Computer Vision/The CC program.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/NLP pororam.md",
+                "file": "Computer Vision/The CC program.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/NLP pororam.md"
+                "file": "Computer Vision/The CC program.md"
               }
             }
           }
@@ -148,13 +148,13 @@
   },
   "active": "341f449f9576438a",
   "lastOpenFiles": [
-    "RL program.md",
+    "Computer Vision/Libraries for Computer Vision in Python.md",
     "RL/RL program.md",
     "NLP/NLP pororam.md",
+    "RL program.md",
     "Computer Vision/The CC program.md",
     "Untitled.canvas",
     "NLP",
-    "Computer Vision/Libraries for Computer Vision in Python.md",
     "Image.md",
     "Image representation in computer. Image channels. Biological reasons..md",
     "Computer Vision/Image representation in computer. Image channels. Biological reasons..md",
