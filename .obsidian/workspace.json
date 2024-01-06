@@ -146,11 +146,12 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "e476cf5e6b7598c7",
+  "active": "341f449f9576438a",
   "lastOpenFiles": [
     "RL program.md",
-    "Computer Vision/The CC program.md",
+    "RL/RL program.md",
     "NLP/NLP pororam.md",
+    "Computer Vision/The CC program.md",
     "Untitled.canvas",
     "NLP",
     "Computer Vision/Libraries for Computer Vision in Python.md",
