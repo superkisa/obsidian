@@ -1,5 +1,5 @@
 ## Here are topics according to playlist:
-1. [Intro to CV, classic CV, libraries overview ]()
+1. [Intro to CV, classic CV, libraries overview ](https://youtu.be/4o6AOhT1MC4?si=1iFiXPcms7ljjbfG)
 2. Image representations. Low-level image processing 
 3. Classical CV image processing pt. 1 
 4. Classical CV image processing pt. 2. Morphology, Canny, etc. 
