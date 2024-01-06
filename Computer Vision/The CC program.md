@@ -1,19 +1,29 @@
-1. Image representation in computer. Image channels. Biological reasons.
-2. [[Libraries for Computer Vision in Python]].
-3. Image histogram, histogram equalization, gamma correction.
-4. Convolution operation definition, hyperparameters and effective implementation details.
-5. DL frameworks: overall structure and examples.
-6. Image gradients: Laplacian, Sobel filter.
-7. Neural Computer Vision problems statement: classification, detection, segmentation
-8. Metrics for CV problems: IoU, mAP.
-9. Main datasets: CIFAR10/100, PASCAL VOC, ImageNet, COCO, OpenImages.
-10. Upsampling methods: poolings, transposed convolutions.
-11. Simple FCN, DeconvNet, SegNet: main ideas and approaches.
-12. U-Net, PSPNet.
-13. Taxonomy of loss functions in segmentation.
-14. R-CNN, Fast, Faster: structure, main ideas and performance.
-15. YOLO v1-3.
-16. Transposed convolutions. Depthwise convolutions. 1x1 convolutions.
-17. MobileNet v1 and v2.
-18. Object tracking problem. SORT algorithm: ideas, hyperparameters.
-19. Simple neural style transfer technique. Perceptual loss.
+## Here are topics according to playlist:
+1. Intro to CV, classic CV, libraries overview 
+2. Image representations. Low-level image processing 
+3. Classical CV image processing pt. 1 
+4. Classical CV image processing pt. 2. Morphology, Canny, etc. 
+5. Convolutions in PyTorch 
+6. More convolutions, Detection, R-CNN 
+7. Segmentation. U-Net, Mask R-CNN 
+8. Autoencoders 
+9. Variational AutoEncoders, latent representation. Bayes rule 
+10. Generative Adversarial Networks 
+
+## Exam program: 
+1. Metrics in CV: IoU, mAP. Focal Loss 
+2. Ways to represent image in computer. 
+3. Classical image processing. Bayerisation. Canny edge detection. 
+4. Computer Vision problem statements: classification, detection, segmentation 
+5. Main datasets: ImageNet, COCO, OpenImages 
+6. Separable convolutions 
+7. Upsampling methods: pooling, transposed convolutions 
+8. MobileNet v1, v2, blocks 
+9. R-CNN -> Fast -> Faster structure, main ideas, metrics and performance 
+10. U-Net 
+11. Mask R-CNN 
+12. KL divergence. Relation to crossentropy 
+13. Variational Autoencoders: structure, loss function, training process 
+14. Generative Adversarial Networks: main ideas, loss function, training process 
+15. Non Maximum Suppression algorithm 
+16. YOLO v1 -> v3 main ideas
