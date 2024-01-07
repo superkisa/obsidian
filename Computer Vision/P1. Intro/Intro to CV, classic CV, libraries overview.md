@@ -31,6 +31,9 @@ ResNet
 ![[Pasted image 20240107201656.png]]
 ![[Pasted image 20240107201720.png]]
 ![[Pasted image 20240107201843.png]]
+DenseNet
+![[Pasted image 20240107202015.png]]
+![[Pasted image 20240107202058.png]]
 
 
 [Webinar](https://youtu.be/9A7oeVQ8tiE?si=Xco75If1y3dOV58A)
