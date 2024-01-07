@@ -51,7 +51,6 @@ Squeeze & Excitation Networks
 EfficientNet
 ![[Pasted image 20240107203420.png]]
 ![[Pasted image 20240107203508.png]]
-
 #### Datasets
 ![[Pasted image 20240107203853.png]]
 ![[Pasted image 20240107203909.png]]
