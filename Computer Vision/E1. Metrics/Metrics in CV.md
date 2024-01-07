@@ -6,11 +6,12 @@ segmentation.
 
 IoU = area of overlap / area of union 
 IoU ~ 0.7-0.9 is considered to be pretty good. 
-**What if IoU is equal to 0? **
+
+**What if IoU is equal to 0?**
 When there is no intersection BBxs, then we do not know how far these objects are from 
 each other - so also use other metrics such as GIoU - generalized IoU. 
 
-***What is GIoU? **
+**What is GIoU?**
 Generalized IoU (GIoU) takes into account not only the overlap between the predicted 
 bounding box and the ground truth bounding box, but also the overlap between the predicted 
 bounding box and the surrounding context. 
