@@ -1,6 +1,7 @@
 [Lecture](https://youtu.be/4o6AOhT1MC4?si=1iFiXPcms7ljjbfG) Lecture 0*: Biological basics
 ![[Pasted image 20240107023211.png]]
-Полная лажа в разделе "Course information"
+Полная лажа в разделе "Course plan"
+![[Pasted image 20240107204546.png]]
 
 [Lecture](https://youtu.be/4owGlnDXwxo?si=k6rqJpUHFTH-ZAsz) Lecture 00: Computer Vision with Deep Learning: an overview
 ![[Pasted image 20240107192901.png]]
