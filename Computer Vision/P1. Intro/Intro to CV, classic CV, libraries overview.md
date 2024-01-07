@@ -8,6 +8,8 @@ Problems:
   ![[Pasted image 20240107194300.png]]
 - Localization
   ![[Pasted image 20240107194343.png]]
+- Detection
+![[Pasted image 20240107194516.png]]
 
 [Webinar](https://youtu.be/9A7oeVQ8tiE?si=Xco75If1y3dOV58A)
 ![[Pasted image 20240107025607.png]]
