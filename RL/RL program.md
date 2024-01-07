@@ -1,5 +1,5 @@
 Theoretical minimum:  
-- RL problem statement (environment, agent, etc. abstraсtions). Markov  
+- RL problem statement (environment, agent, etc., abstraсtions). Markov  
 decision process and its properties. Reward, discounted reward.  
 - What is a Q-function and a Value-function? Relationship between them.  
 - How can RL be applied to NLP or CV tasks?  
