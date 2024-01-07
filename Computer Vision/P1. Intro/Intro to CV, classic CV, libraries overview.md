@@ -25,6 +25,10 @@ Convolution Recap
 ![[Pasted image 20240107200801.png]]
 ![[Pasted image 20240107200842.png]]
 ![[Pasted image 20240107200856.png]]
+Main Ideas of Famous Architectures in CV
+![[Pasted image 20240107201300.png]]
+ResNet
+![[Pasted image 20240107201430.png]]
 
 
 [Webinar](https://youtu.be/9A7oeVQ8tiE?si=Xco75If1y3dOV58A)
