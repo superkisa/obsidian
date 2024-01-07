@@ -29,6 +29,7 @@ Convolution Recap
 ![[Pasted image 20240107202304.png]]
 ![[Pasted image 20240107202434.png]]
 ![[Pasted image 20240107202500.png]]
+![[Pasted image 20240107202820.png]]
 Main Ideas of Famous Architectures in CV
 ![[Pasted image 20240107201300.png]]
 ResNet
@@ -38,6 +39,11 @@ ResNet
 DenseNet
 ![[Pasted image 20240107202015.png]]
 ![[Pasted image 20240107202058.png]]
+MobileNet
+![[Pasted image 20240107202959.png]]
+![[Pasted image 20240107203041.png]]
+![[Pasted image 20240107203058.png]]
+
 
 
 [Webinar](https://youtu.be/9A7oeVQ8tiE?si=Xco75If1y3dOV58A)
