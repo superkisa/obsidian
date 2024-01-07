@@ -43,8 +43,11 @@ MobileNet
 ![[Pasted image 20240107202959.png]]
 ![[Pasted image 20240107203041.png]]
 ![[Pasted image 20240107203058.png]]
-
-
+Squeeze & Excitation Networks
+![[Pasted image 20240107203321.png]]
+EfficientNet
+![[Pasted image 20240107203420.png]]
+![[Pasted image 20240107203508.png]]
 
 [Webinar](https://youtu.be/9A7oeVQ8tiE?si=Xco75If1y3dOV58A)
 ![[Pasted image 20240107025607.png]]
