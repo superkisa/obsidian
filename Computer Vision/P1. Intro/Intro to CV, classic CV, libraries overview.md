@@ -1,4 +1,5 @@
 [Lecture](https://youtu.be/4o6AOhT1MC4?si=1iFiXPcms7ljjbfG) Lecture 0*: Biological basics
+[Slides](https://github.com/girafe-ai/computer-vision/blob/launch-21f/slides/cv_00_biovision.pdf)
 ![[Pasted image 20240107023211.png]]
 Полная лажа в разделе "Course plan"
 ![[Pasted image 20240107204546.png]]
