@@ -11,7 +11,7 @@
 10. Generative Adversarial Networks 
 
 ## Exam program: 
-1. Metrics in CV: IoU, mAP. Focal Loss 
+1. [[Metrics in CV]]: IoU, mAP. Focal Loss 
 2. Ways to represent image in computer. 
 3. Classical image processing. Bayerisation. Canny edge detection. 
 4. Computer Vision problem statements: classification, detection, segmentation 
