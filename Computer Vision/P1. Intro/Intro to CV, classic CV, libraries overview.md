@@ -3,6 +3,11 @@
 
 [Lecture](https://youtu.be/4owGlnDXwxo?si=k6rqJpUHFTH-ZAsz) Lecture 00: Computer Vision with Deep Learning: an overview
 ![[Pasted image 20240107192901.png]]
+Problems:
+- Classification
+  ![[Pasted image 20240107194300.png]]
+- Localization
+  ![[Pasted image 20240107194343.png]]
 
 [Webinar](https://youtu.be/9A7oeVQ8tiE?si=Xco75If1y3dOV58A)
 ![[Pasted image 20240107025607.png]]
