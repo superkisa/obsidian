@@ -26,6 +26,7 @@ Convolution Recap
 ![[Pasted image 20240107200842.png]]
 ![[Pasted image 20240107200856.png]]
 ![[Pasted image 20240107202203.png]]
+![[Pasted image 20240107202304.png]]
 Main Ideas of Famous Architectures in CV
 ![[Pasted image 20240107201300.png]]
 ResNet
