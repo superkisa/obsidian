@@ -69,8 +69,9 @@ EfficientNet
 [Notebook](https://github.com/girafe-ai/computer-vision/blob/launch-21f/seminars/cv_01_images_operations/cv_01_images_operations.ipynb)
 [Open in Colab](https://colab.research.google.com/github/girafe-ai/computer-vision/blob/launch-21f/seminars/cv_01_images_operations/cv_01_images_operations.ipynb)
 
-[Lecture 2](https://youtu.be/K911Zy83lkg?si=-6TmzJV1tlpSlmyE)  Images and Colour
-Yet another introduction to course
+[Lecture 2](https://youtu.be/K911Zy83lkg?si=-6TmzJV1tlpSlmyE)  
+### Images and Colour
+#### Yet another introduction to course
 ![[Pasted image 20240108230752.png]]
 ![[Pasted image 20240108231641.png]]
 ![[Pasted image 20240108232037.png]]
@@ -84,3 +85,8 @@ Yet another introduction to course
 ![[Pasted image 20240108233034.png]]
 ![[Pasted image 20240108233324.png]]
 ![[Pasted image 20240108233418.png]]
+#### Colour spaces
+![[Pasted image 20240108233755.png]]
+![[Pasted image 20240108233816.png]]
+![[Pasted image 20240108233831.png]]
+![[Pasted image 20240108233859.png]]
