@@ -71,3 +71,4 @@ EfficientNet
 
 [Lecture 2](https://youtu.be/K911Zy83lkg?si=-6TmzJV1tlpSlmyE)  Images and Colour
 ![[Pasted image 20240108230752.png]]
+![[Pasted image 20240108231641.png]]
