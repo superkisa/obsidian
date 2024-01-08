@@ -82,3 +82,5 @@ Yet another introduction to course
 ![[Pasted image 20240108232919.png]]
 ![[Pasted image 20240108233011.png]]
 ![[Pasted image 20240108233034.png]]
+![[Pasted image 20240108233324.png]]
+![[Pasted image 20240108233418.png]]
