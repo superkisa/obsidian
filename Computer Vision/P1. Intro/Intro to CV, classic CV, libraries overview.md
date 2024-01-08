@@ -68,3 +68,6 @@ EfficientNet
 ![[Pasted image 20240107025607.png]]
 [Notebook](https://github.com/girafe-ai/computer-vision/blob/launch-21f/seminars/cv_01_images_operations/cv_01_images_operations.ipynb)
 [Open in Colab](https://colab.research.google.com/github/girafe-ai/computer-vision/blob/launch-21f/seminars/cv_01_images_operations/cv_01_images_operations.ipynb)
+
+[Lecture 2](https://youtu.be/K911Zy83lkg?si=-6TmzJV1tlpSlmyE) 
+![[Pasted image 20240108230752.png]]
