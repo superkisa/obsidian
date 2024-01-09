@@ -9,3 +9,5 @@ Search procedure for all boxes:
 ![[Pasted image 20240109224254.png]]
 Number of boxes:
 ![[Pasted image 20240109224738.png]]
+Selective search:
+![[Pasted image 20240109225429.png]]
