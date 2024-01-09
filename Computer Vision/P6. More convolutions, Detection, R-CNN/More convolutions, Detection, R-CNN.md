@@ -9,7 +9,7 @@ Search procedure for all boxes:
 ![[Pasted image 20240109224254.png]]
 Number of boxes:
 ![[Pasted image 20240109224738.png]]
-Selective search:
+[Selective search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf):
 ![[Pasted image 20240109225429.png]]
 To R-CNN
 ![[Pasted image 20240109225652.png]]
