@@ -3,3 +3,8 @@
 [Skeletonize](https://scikit-image.org/docs/stable/auto_examples/edges/plot_skeleton.html)
 [Convex Hull](https://scikit-image.org/docs/stable/auto_examples/edges/plot_convex_hull.html)
 [Canny Edge Detection](https://docs.opencv.org/4.8.0/da/d22/tutorial_py_canny.html)
+
+Circular Hough Transform
+[Wiki on lines detection](https://en.wikipedia.org/wiki/Hough_transform)
+[skimage linear doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_line_hough_transform.html)
+[skimage circular doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_circular_elliptical_hough_transform.html)
