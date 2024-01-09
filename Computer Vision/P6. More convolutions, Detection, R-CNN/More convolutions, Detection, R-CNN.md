@@ -7,3 +7,5 @@ About multitask Loss
 ![[Pasted image 20240109222724.png]]
 Search procedure for all boxes:
 ![[Pasted image 20240109224254.png]]
+Number of boxes:
+![[Pasted image 20240109224738.png]]
