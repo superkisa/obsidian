@@ -1,6 +1,7 @@
 # Metrics for CV problems: IoU, mAP. 
 ## IoU (aka Jaccard index) 
 ![[Pasted image 20240107145135.png]]
+[[cv_lect_CV_Tasks_1.pdf|Presentation]] pp 43-48
 It is a measure of the overlap between the predicted segmentation and the ground truth 
 segmentation. 
 
