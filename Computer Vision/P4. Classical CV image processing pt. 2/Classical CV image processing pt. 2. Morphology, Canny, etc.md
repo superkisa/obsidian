@@ -8,3 +8,8 @@ Circular Hough Transform
 [Wiki on lines detection](https://en.wikipedia.org/wiki/Hough_transform)
 [skimage linear doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_line_hough_transform.html)
 [skimage circular doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_circular_elliptical_hough_transform.html)
+
+Watershed segmentation
+https://img-blog.csdnimg.cn/20190315153313192.png
+[skimage doc](https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_watershed.html)
+[opencv doc](https://docs.opencv.org/4.8.0/d3/db4/tutorial_py_watershed.html)
