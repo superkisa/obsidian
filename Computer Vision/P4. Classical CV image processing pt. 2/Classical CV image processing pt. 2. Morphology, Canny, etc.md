@@ -13,3 +13,9 @@ Watershed segmentation
 https://img-blog.csdnimg.cn/20190315153313192.png
 [skimage doc](https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_watershed.html)
 [opencv doc](https://docs.opencv.org/4.8.0/d3/db4/tutorial_py_watershed.html)
+
+Generic pipeline for segmentation
+- setting threshold values for binarizatioin with Otsu filter
+- filling small noisy dots with morphological closing
+- border artifacts (objects intersection) deletion
+- filtering small objects by square
