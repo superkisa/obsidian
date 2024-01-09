@@ -1,4 +1,5 @@
- <b>RL problem statement (environment, agent, etc. abstraсtions). Markov decision process and its properties. Reward, discounted reward. </b> 
+ **RL problem statement (environment, agent, etc. abstraсtions). Markov decision process and its properties. Reward, discounted reward.
+ 
 **Reinforcement Learning Problem Statement:**
 
 1. **Environment (E):**
