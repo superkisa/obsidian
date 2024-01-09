@@ -13,3 +13,4 @@ Selective search:
 ![[Pasted image 20240109225429.png]]
 To R-CNN
 ![[Pasted image 20240109225652.png]]
+![[Pasted image 20240109225947.png]]
