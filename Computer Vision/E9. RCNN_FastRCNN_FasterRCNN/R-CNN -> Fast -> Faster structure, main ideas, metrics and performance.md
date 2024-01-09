@@ -25,4 +25,11 @@ Here is another problem - we have different objects with different sizes. How to
 
 ![[Pasted image 20240110012853.png]]
 
-There are man
+There are many different approaches, how to choose windows for detection
+
+![[Pasted image 20240110013057.png]]
+
+But the most popular one is 
+#### R-CNN
+to be continued...
+
