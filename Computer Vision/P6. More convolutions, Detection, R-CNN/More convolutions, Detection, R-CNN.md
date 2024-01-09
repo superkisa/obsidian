@@ -14,3 +14,5 @@ Number of boxes:
 To R-CNN
 ![[Pasted image 20240109225652.png]]
 ![[Pasted image 20240109225947.png]]
+IoU:
+![[Pasted image 20240109232747.png]]
