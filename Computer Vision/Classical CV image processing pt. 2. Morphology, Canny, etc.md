@@ -1,1 +1,0 @@
-[Morphology](https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html)
