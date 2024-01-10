@@ -47,7 +47,7 @@ __Подходы к построению остова__
 
 #### [Canny Edge Detection](https://docs.opencv.org/4.8.0/da/d22/tutorial_py_canny.html)
 детекция граней
- [фильтр Гаусса](https://en.wikipedia.org/wiki/Gaussian_filter)
+ [фильтр Гаусса](https://homepages.inf.ed.ac.uk/rbf/HIPR2/gsmooth.htm)
 
 #### Circular Hough Transform
 [Wiki on lines detection](https://en.wikipedia.org/wiki/Hough_transform)
