@@ -15,3 +15,20 @@ The **discriminator** is just a binary image classifier which you should alrea
 ![[Pasted image 20240111011613.png]]
 Putting it all together, here is what a basic GAN architecture looks like: the generator makes fake images; we feed both the real images (training dataset) and the fake images into the discriminator in separate batches. The discriminator then tells whether an image is real or fake.
 ![[Pasted image 20240111011653.png]]
+### **Training GANs**
+
+#### **The Minimax game: G vs. D**
+
+Most deep learning models (for example, image classification) are based on optimization: finding the low value of the cost function. GANs are different because the two networks: the generator and discriminator, each has its own cost with opposite objectives:
+
+- The generator tries to fool the discriminator into thinking the fake images as real
+- The discriminator tries to classify real and fake images correctly
+
+The minimax game math function below illustrates this adversarial dynamic during training.
+![[Pasted image 20240111011845.png]]
+Both the generator and discriminator improve over time during training. The generator gets better and better at producing images that resemble the training data, while the discriminator gets better at telling the real and fake images apart.
+
+Training GANs is to find an **equilibrium** in the game when:
+
+- The generator makes data that looks almost identical to the training data.
+- The discriminator can no longer tell the difference between the fake images from the real images.
