@@ -47,3 +47,5 @@ Instance Segmentation Task:
 ![[Pasted image 20240110183440.png]]
 ![[Pasted image 20240110183457.png]]
 Pose Estimation:
+![[Pasted image 20240110183755.png]]
+![[Pasted image 20240110183807.png]]
