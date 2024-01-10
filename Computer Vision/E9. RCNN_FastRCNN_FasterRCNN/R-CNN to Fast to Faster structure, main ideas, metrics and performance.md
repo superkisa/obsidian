@@ -68,4 +68,4 @@ You can see that it has bad performance, it's very slow model, because of the fi
 ![[Pasted image 20240110140403.png]]
 Our feature map contains the special structure, so we don't loose information about location of our features and objects.
 
-
+![[Pasted image 20240110142230.png]]
