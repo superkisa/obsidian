@@ -39,3 +39,6 @@ But there is some question: how to solve bbox regression? There is a problem, be
 
 We can predict not  coordinates of bboxes, but transformation.
 (tx, ty, tn, tw)
+
+![[Pasted image 20240110133726.png]]
+
