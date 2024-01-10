@@ -54,3 +54,12 @@ Let's see steps of training R-CNN models
 
 ![[Pasted image 20240110135529.png]]
 
+Let's see the results of R-CNN
+
+![[Pasted image 20240110135909.png]]
+
+But this model has problems
+
+![[Pasted image 20240110135957.png]]
+
+
