@@ -34,3 +34,11 @@ DeconvNet:
 ![[Pasted image 20240110180418.png]]
 ![[Pasted image 20240110180429.png]]
 ![[Pasted image 20240110180551.png]]
+SegNet:
+![[Pasted image 20240110180755.png]]
+U-net:
+![[Pasted image 20240110180835.png]]
+![[Pasted image 20240110180854.png]]
+![[Pasted image 20240110180914.png]]
+Instance Segmentation Task:
+![[Pasted image 20240110181031.png]]
