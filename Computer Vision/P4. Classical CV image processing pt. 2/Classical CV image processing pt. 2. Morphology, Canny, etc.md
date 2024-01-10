@@ -56,6 +56,7 @@ __Подходы к построению остова__
 5. **Трассировка области неоднозначности**. Итоговые границы определяются путём подавления всех краёв, несвязанных с определенными (сильными) границами.
 
 #### Circular Hough Transform
+ищет кружочки на картинках (и эллипсы)
 [Wiki on lines detection](https://en.wikipedia.org/wiki/Hough_transform)
 [skimage linear doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_line_hough_transform.html)
 [skimage circular doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_circular_elliptical_hough_transform.html)
