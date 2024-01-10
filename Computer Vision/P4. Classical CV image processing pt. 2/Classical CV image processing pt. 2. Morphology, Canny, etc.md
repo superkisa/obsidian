@@ -46,6 +46,7 @@ __Подходы к построению остова__
 ![[Pasted image 20240110210627.png]]
 
 #### [Canny Edge Detection](https://docs.opencv.org/4.8.0/da/d22/tutorial_py_canny.html)
+детекция граней
 
 #### Circular Hough Transform
 [Wiki on lines detection](https://en.wikipedia.org/wiki/Hough_transform)
