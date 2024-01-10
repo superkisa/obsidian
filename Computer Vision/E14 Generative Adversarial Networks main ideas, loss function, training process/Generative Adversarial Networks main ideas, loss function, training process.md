@@ -1,3 +1,4 @@
+[Ссылка](https://pyimagesearch.com/2021/09/13/intro-to-generative-adversarial-networks-gans/)
 ![[Pasted image 20240111011106.png]]
 ## **How GANs work**
 
@@ -32,3 +33,15 @@ Training GANs is to find an **equilibrium** in the game when:
 
 - The generator makes data that looks almost identical to the training data.
 - The discriminator can no longer tell the difference between the fake images from the real images.
+### **Image-to-image translation**
+
+Image-to-image translation is a computer vision task that translates the input image to another domain (e.g., color or style) while preserving the original image content. This is perhaps one of the most important tasks to use GANs in art and design.
+
+[Pix2Pix](https://arxiv.org/abs/1611.07004) (Image-to-Image Translation with Conditional Adversarial Networks) is a conditional GAN that was perhaps the most famous image-to-image translation GAN. However, one major drawback of Pix2Pix is that it requires paired training image datasets.
+![[Pasted image 20240111012119.png]]
+### **Text-to-Image**
+
+We’ve seen a lot of Image-to-Image translation examples by GANs. We could also use words as the condition to generate images, which is much more flexible and intuitive than using class labels as the condition.
+
+Combining NLP and computer vision has become a popular research area in recent years. Here are a few examples: [StyleCLIP](https://github.com/orpatashnik/StyleCLIP) and [Taming Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2012.09841v3).
+![[Pasted image 20240111012226.png]]
