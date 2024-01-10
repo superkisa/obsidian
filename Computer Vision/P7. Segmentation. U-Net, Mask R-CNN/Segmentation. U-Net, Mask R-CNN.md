@@ -33,3 +33,4 @@ Upsampling:
 DeconvNet:
 ![[Pasted image 20240110180418.png]]
 ![[Pasted image 20240110180429.png]]
+![[Pasted image 20240110180551.png]]
