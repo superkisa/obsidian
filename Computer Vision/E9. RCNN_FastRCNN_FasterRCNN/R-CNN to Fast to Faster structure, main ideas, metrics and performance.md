@@ -33,5 +33,5 @@ But the most popular one is Selective Search. We will not go into details about 
 
 #### R-CNN
 
-
+![[Pasted image 20240110131646.png]]
 
