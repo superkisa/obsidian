@@ -42,3 +42,9 @@ We can predict not  coordinates of bboxes, but transformation.
 
 ![[Pasted image 20240110133726.png]]
 
+Let's see steps of training R-CNN models
+
+![[Pasted image 20240110135047.png]]
+
+![[Pasted image 20240110135217.png]]
+
