@@ -70,4 +70,17 @@ Our feature map contains the special structure, so we don't loose information ab
 
 ![[Pasted image 20240110142230.png]]
 
+![[Pasted image 20240110170410.png]]
+
+![[Pasted image 20240110170424.png]]
+
+![[Pasted image 20240110170459.png]]
+
+![[Pasted image 20240110170522.png]]
+
+![[Pasted image 20240110170536.png]]
+
+And as a result, this approach perform much better than R-CNN
+
+![[Pasted image 20240110170629.png]]
 
