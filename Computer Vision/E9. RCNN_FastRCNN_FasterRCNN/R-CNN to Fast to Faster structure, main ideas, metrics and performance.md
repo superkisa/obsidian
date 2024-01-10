@@ -35,3 +35,7 @@ But the most popular one is Selective Search. We will not go into details about 
 
 ![[Pasted image 20240110131646.png]]
 
+But there is some question: how to solve bbox regression? There is a problem, because predifined bbox can be not similiar to the ground true bbox.
+
+We can predict not  coordinates of bboxes, but transformation.
+(tx, ty, tn, tw)
