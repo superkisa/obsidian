@@ -77,5 +77,22 @@ https://img-blog.csdnimg.cn/20190315153313192.png
 - border artifacts (objects intersection) deletion
 - filtering small objects by square
 
-#### Bayerisation
-or mozaik
+#### [Bayerisation](https://en.wikipedia.org/wiki/Bayer_filter)
+or mosaicing (?) короче что-то с мазаикой, но тип оно встраивается мозаикой из красных, синих и зеленых блоков разной интенсивности.
+Обратный процесс называется demosaicing (так что ли или короче демозаика :) ) or debayerisation
+The raw images coming from the camera are bayerized. They are represented as a two-dimensional array, where individual pixels encode the intensity of blue, green, and red colors.
+![[Pasted image 20240111001932.png]]
+```
+def rgb_to_bayer(img_rgb: np.ndarray) -> np.ndarray:
+    H, W = img_rgb.shape[0], img_rgb.shape[1]
+    bayer_img = np.zeros((H, W))
+    bayer_img[0:H:2, 0:W:2] = img_rgb[0:H:2, 0:W:2, 2]
+    bayer_img[1:H:2, 0:W:2] = img_rgb[0:H:2, 0:W:2, 1]
+    bayer_img[0:H:2, 1:W:2] = img_rgb[0:H:2, 1:W:2, 1]
+    bayer_img[1:H:2, 1:W:2] = img_rgb[1:H:2, 1:W:2, 0]
+
+    return bayer_img.astype(np.uint8)
+```
+![[Pasted image 20240111002147.png]]
+![[Pasted image 20240111002155.png]]
+![[Pasted image 20240111002204.png]]
