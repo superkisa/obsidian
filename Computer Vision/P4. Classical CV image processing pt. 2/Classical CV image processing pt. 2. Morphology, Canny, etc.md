@@ -22,10 +22,12 @@
 5.  Morphological Gradient = dilation - erosion (It is the difference between dilation and erosion of an image). Выделяет границу объекта.
 	`gradient = cv.morphologyEx(img, cv.MORPH_GRADIENT, kernel)`
 	   ![[Pasted image 20240110193757.png]]
-6. Top Hat -- original img - opening img (It is the difference between input image and Opening of the image). Выделяет большие белые объекты изображения.
+6. Top Hat = original img - opening img (It is the difference between input image and Opening of the image). Убирает большие белые объекты изображения.
 	`tophat = cv.morphologyEx(img, cv.MORPH_TOPHAT, kernel)`
 	![[Pasted image 20240110194253.png]]
-7. Black Hat
+7. Black Hat = original img - closing img (It is the difference between input image and Closing of the image). Выделяет черные "внутренности" объекта.
+	 `blackhat = cv.morphologyEx(img, cv.MORPH_BLACKHAT, kernel)`
+	 ![[Pasted image 20240110195335.png]]
 
 #### [Skeletonize](https://scikit-image.org/docs/stable/auto_examples/edges/plot_skeleton.html)
 #### [Convex Hull](https://scikit-image.org/docs/stable/auto_examples/edges/plot_convex_hull.html)
