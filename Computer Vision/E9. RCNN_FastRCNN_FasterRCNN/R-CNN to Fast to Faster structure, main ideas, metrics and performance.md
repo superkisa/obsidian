@@ -29,7 +29,9 @@ There are many different approaches, how to choose windows for detection
 
 ![[Pasted image 20240110013057.png]]
 
-But the most popular one is 
+But the most popular one is Selective Search. We will not go into details about this approach, let's just think, that we can somehow choose optimal windows
+
 #### R-CNN
-to be continued...
+
+
 
