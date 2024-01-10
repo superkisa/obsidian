@@ -71,3 +71,7 @@ https://img-blog.csdnimg.cn/20190315153313192.png
 - filling small noisy dots with morphological closing
 - border artifacts (objects intersection) deletion
 - filtering small objects by square
+
+
+#### Bayerisation
+or mozaik
