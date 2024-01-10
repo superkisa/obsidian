@@ -22,3 +22,4 @@ Solution:
 Upsampling:
 ![[Pasted image 20240110165332.png]]
 ![[Pasted image 20240110165637.png]]
+![[Pasted image 20240110172248.png]]
