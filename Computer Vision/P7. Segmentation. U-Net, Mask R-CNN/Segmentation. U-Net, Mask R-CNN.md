@@ -30,3 +30,6 @@ Upsampling:
 Это Марату было не интересно, и ниче не понятно че тут:
 ![[Pasted image 20240110180102.png]]
 ![[Pasted image 20240110180125.png]]
+DeconvNet:
+![[Pasted image 20240110180418.png]]
+![[Pasted image 20240110180429.png]]
