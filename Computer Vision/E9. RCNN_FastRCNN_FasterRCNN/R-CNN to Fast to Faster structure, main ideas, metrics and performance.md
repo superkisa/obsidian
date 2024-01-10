@@ -62,4 +62,8 @@ But this model has problems
 
 ![[Pasted image 20240110135957.png]]
 
+You can see that it has bad performance, it's very slow model, because of the first point above
+
+## Fast R-CNN
+![[Pasted image 20240110140403.png]]
 
