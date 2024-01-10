@@ -84,3 +84,7 @@ And as a result, this approach perform much better than R-CNN
 
 ![[Pasted image 20240110170629.png]]
 
+The one thing that is not differentiable in Fast R-CNN is region proposal method. And it will be changed in the next model
+
+## Faster R-CNN
+
