@@ -48,3 +48,9 @@ Let's see steps of training R-CNN models
 
 ![[Pasted image 20240110135217.png]]
 
+![[Pasted image 20240110135427.png]]
+
+![[Pasted image 20240110135455.png]]
+
+![[Pasted image 20240110135529.png]]
+
