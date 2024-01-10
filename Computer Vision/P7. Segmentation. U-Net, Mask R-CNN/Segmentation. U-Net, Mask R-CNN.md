@@ -42,3 +42,8 @@ U-net:
 ![[Pasted image 20240110180914.png]]
 Instance Segmentation Task:
 ![[Pasted image 20240110181031.png]]
+![[Pasted image 20240110183405.png]]
+![[Pasted image 20240110183418.png]]
+![[Pasted image 20240110183440.png]]
+![[Pasted image 20240110183457.png]]
+Pose Estimation:
