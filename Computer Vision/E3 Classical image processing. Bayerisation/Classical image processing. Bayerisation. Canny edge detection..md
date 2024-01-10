@@ -1,4 +1,9 @@
 ![[cv_04_morphology.ipynb]]
+#### Quantization
+To save some memory we could use less colour values
+#### Histogram equalization for adjusting contrast
+#### [Gamma correction](https://en.wikipedia.org/wiki/Gamma_correction)
+This transform is related to difference in eye and camera light perception, [see more info here](https://www.cambridgeincolour.com/tutorials/gamma-correction.htm)
 #### [Morphology](https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html):
 ![[Pasted image 20240110192603.png]]
  1. Erosion -- делает линии тоньше (make lines thiner)
@@ -71,7 +76,6 @@ https://img-blog.csdnimg.cn/20190315153313192.png
 - filling small noisy dots with morphological closing
 - border artifacts (objects intersection) deletion
 - filtering small objects by square
-
 
 #### Bayerisation
 or mozaik
