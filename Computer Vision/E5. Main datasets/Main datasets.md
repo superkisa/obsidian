@@ -28,3 +28,5 @@ In the context of computer vision, several main datasets are widely used for var
     - Open Images dataset is available through the Open Images platform: https://storage.googleapis.com/openimages/web/index.html
 
 These datasets play a crucial role in advancing the field of computer vision by providing standardized benchmarks for evaluating and comparing different algorithms and models. Researchers often use these datasets to train and test their models, and the availability of annotations allows for the development of algorithms for tasks ranging from image classification to more complex tasks like instance segmentation.
+
+Добавить скриншоты
