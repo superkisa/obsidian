@@ -90,3 +90,5 @@ The one thing that is not differentiable in Fast R-CNN is region proposal method
 
 ![[Pasted image 20240110180458.png]]
 
+![[Pasted image 20240111040115.png]]
+
