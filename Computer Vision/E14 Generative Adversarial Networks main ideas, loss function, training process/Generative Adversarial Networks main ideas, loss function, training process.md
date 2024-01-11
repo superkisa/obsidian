@@ -6,6 +6,8 @@
 (пример со сравнением долларовой купюры)
 In the end the **Generator** generates dollar bills indistinguishable from real ones and the **Discriminator** is forced to guess (with probability = 1/2).
 NOTE: Both the Discriminator and Generator actually start from scratch meaning they are both randomly initialized at start and then simultaneously trained.
+![[Pasted image 20240111181045.png]]
+Среднее значение по всем обучающим примерам m.
 
 
 ## **How GANs work**
