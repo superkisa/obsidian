@@ -101,7 +101,7 @@ def rgb_to_bayer(img_rgb: np.ndarray) -> np.ndarray:
 ![[Pasted image 20240111002155.png]]
 ![[Pasted image 20240111002204.png]]
 
-**Demosaicing
+**Demosaicing**
 
 Converting an image captured in RGGB Bayer pattern to RGB involves a process called demosaicing or debayering. In the RGGB pattern, each pixel has a color filter that allows only one of the Red (R), Green (G), or Blue (B) components to be captured. To reconstruct a full-color RGB image, the missing color information must be interpolated.
 
