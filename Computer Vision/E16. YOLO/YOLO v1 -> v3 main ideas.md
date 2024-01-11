@@ -26,4 +26,18 @@ In parts where the answer was yes, we apply anchors
 
 The idea of anchors: we get our anchors from dataset by clustering actual bounding boxes and we apply these bounding boxes into these points.
 
+
 ![[Pasted image 20240111033657.png]]
+
+In this point we get set of bounding boxes, which we think could contain some objects.
+
+![[Pasted image 20240111041143.png]]
+
+4) Then to predict a class of an object in bounding box we do not crop it, because it is costy action. Intead of, we predict class for each cell.
+
+![[Pasted image 20240111041346.png]]
+
+5) Based on this we calculate class for each bounding box based on which part of cell is covered by this bbox
+
+![[Pasted image 20240111041522.png]]
+
