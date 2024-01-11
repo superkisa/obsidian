@@ -16,3 +16,10 @@ Here's a breakdown of the two components of separable convolutions:
 The overall operation of a separable convolution is the composition of these two steps: depthwise convolution followed by pointwise convolution. By separating spatial and channel-wise information, separable convolutions reduce the number of parameters and computations, leading to a more efficient and lightweight model.
 
 This technique is often used in deep learning architectures, particularly in mobile and edge devices where computational resources are limited, and efficiency is crucial. Separable convolutions are a key component in architectures like MobileNet and Xception.
+
+----------------------------------------------
+
+Let's suppose that we have kernel and can transform kernel in such way 
+
+![[Pasted image 20240111175958.png]]
+
