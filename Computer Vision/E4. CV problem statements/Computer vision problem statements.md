@@ -1,3 +1,4 @@
+[[Intro to CV, classic CV, libraries overview]]
 1. **Image Classification:**
     
     - **Problem Statement:** Given an input image, the task is to assign a label or category to the entire image.
