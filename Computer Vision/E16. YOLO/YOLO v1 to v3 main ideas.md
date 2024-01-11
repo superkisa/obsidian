@@ -105,4 +105,7 @@ WordTree было сделано вручную.
 
 Здесь мы считаем несколько softmax на каждом уровне.
 
+### Yolov3
+
+https://pjreddie.com/darknet/yolo/ - this site is about yolov3 by authors
 
