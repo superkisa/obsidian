@@ -1,3 +1,4 @@
+Понятная [статья](https://habr.com/ru/articles/556404/)
 ![[Pasted image 20240111031753.png]]
 
 ![[Pasted image 20240111032459.png]]
