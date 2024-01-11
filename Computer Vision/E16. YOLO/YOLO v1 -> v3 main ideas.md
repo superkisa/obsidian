@@ -81,3 +81,7 @@ They also written their own framework for neural networks and their own backbone
 
 ![[Pasted image 20240111045206.png]]
 
+How did they join datasets?
+
+![[Pasted image 20240111045420.png]]
+
