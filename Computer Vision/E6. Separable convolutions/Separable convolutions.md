@@ -23,3 +23,5 @@ Let's suppose that we have kernel and can transform kernel in such way
 
 ![[Pasted image 20240111175958.png]]
 
+![[Pasted image 20240111180241.png]]
+
