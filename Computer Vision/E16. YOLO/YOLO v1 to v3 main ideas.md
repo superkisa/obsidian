@@ -119,3 +119,4 @@ https://pjreddie.com/darknet/yolo/ - this site is about yolov3 by authors
 
 https://arxiv.org/pdf/1804.02767.pdf - here you can find scientific paper of YOLOv3
 
+They added corrections for bounding boxes
