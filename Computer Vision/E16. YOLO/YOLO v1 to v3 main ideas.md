@@ -86,3 +86,13 @@ How did they join datasets?
 ![[Pasted image 20240111045420.png]]
 
 Взяли из 22k только 9k, так как CE работает не очень хорошо, когда так много классов. 
+
+![[Pasted image 20240111121755.png]]
+
+![[Pasted image 20240111121814.png]]
+
+![[Pasted image 20240111121841.png]]
+
+![[Pasted image 20240111121854.png]]
+
+WordTree было сделано вручную.
