@@ -1,6 +1,10 @@
 ![[cv_04_morphology.ipynb]]
 #### Quantization
-To save some memory we could use less colour values
+To save some memory we could use less colour values.
+1. Define clusters in image
+2. Define colour for each cluster
+3. Fill cluster with its colour
+Image will contain a palette and pixels referring to it.
 #### Histogram equalization for adjusting contrast
 #### [Gamma correction](https://en.wikipedia.org/wiki/Gamma_correction)
 This transform is related to difference in eye and camera light perception, [see more info here](https://www.cambridgeincolour.com/tutorials/gamma-correction.htm)
@@ -82,7 +86,7 @@ or mosaicing (?) короче что-то с мазаикой, но тип он�
 Обратный процесс называется demosaicing (так что ли или короче демозаика :) ) or debayerisation
 The raw images coming from the camera are bayerized. They are represented as a two-dimensional array, where individual pixels encode the intensity of blue, green, and red colors.
 ![[Pasted image 20240111001932.png]]
-```
+```python
 def rgb_to_bayer(img_rgb: np.ndarray) -> np.ndarray:
     H, W = img_rgb.shape[0], img_rgb.shape[1]
     bayer_img = np.zeros((H, W))
@@ -96,3 +100,24 @@ def rgb_to_bayer(img_rgb: np.ndarray) -> np.ndarray:
 ![[Pasted image 20240111002147.png]]
 ![[Pasted image 20240111002155.png]]
 ![[Pasted image 20240111002204.png]]
+
+**Demosaicing
+
+Converting an image captured in RGGB Bayer pattern to RGB involves a process called demosaicing or debayering. In the RGGB pattern, each pixel has a color filter that allows only one of the Red (R), Green (G), or Blue (B) components to be captured. To reconstruct a full-color RGB image, the missing color information must be interpolated.
+
+Here's a simplified explanation of the demosaicing process:
+
+1. **Interpolation of Green Channel:**
+    
+    - Since there are two green pixels for every one red and one blue pixel in RGGB, the green channel is often the first to be interpolated. The missing green values for red and blue pixels are estimated based on the surrounding green pixels.
+2. **Interpolation of Red and Blue Channels:**
+    
+    - Once the green channel is interpolated, the red and blue channels can be filled in. For a red pixel, the missing red value is interpolated using neighboring green and blue pixels. Similarly, for a blue pixel, the missing blue value is estimated using neighboring green and red pixels.
+3. **Adjustments and Refinement:**
+    
+    - Various algorithms and techniques may be applied to refine the interpolated values and improve the overall image quality. These may include color correction, noise reduction, and sharpening.
+4. **Conversion to RGB:**
+    
+    - After the interpolation process, you have three separate color channels (red, green, and blue). These channels are combined to form the final RGB image.
+
+The specific demosaicing algorithm used can vary, and there are different approaches, such as bilinear interpolation, nearest-neighbor interpolation, or more sophisticated algorithms like adaptive homogeneity-directed demosaicing (AHDD). The choice of algorithm can impact the quality of the final RGB image.
