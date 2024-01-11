@@ -5,3 +5,5 @@ Watch Separable Convolutions to understand better DepthWise Conv and 1x1 Conv.
 It achieves the same results as VGG
 
 ![[Pasted image 20240111183655.png]]
+
+![[Pasted image 20240111183912.png]]
