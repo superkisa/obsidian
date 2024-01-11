@@ -1,5 +1,23 @@
 [Ссылка](https://pyimagesearch.com/2021/09/13/intro-to-generative-adversarial-networks-gans/)
 ![[Pasted image 20240111011106.png]]
+
+
+## Loss function
+(пример со сравнением долларовой купюры)
+In the end the **Generator** generates dollar bills indistinguishable from real ones and the **Discriminator** is forced to guess (with probability = 1/2).
+NOTE: Both the Discriminator and Generator actually start from scratch meaning they are both randomly initialized at start and then simultaneously trained.
+![[Pasted image 20240111181045.png]]
+Среднее значение по всем обучающим примерам m.
+Так как логарифм единицы равен нулю, то в начале $D(G(z^{(i)}))$ будет равен нулю.
+Дескриминатор хочет максимизировать выражение $1-D(G(z^{(i)}))$, так как логарифм в таком случае даст ответ равный нулю. 
+![[Pasted image 20240111181900.png]]
+С точки зрения генератора мы хотим обмануть распознаватель и заставить его поверить, что генератор даёт реальное изображение, поэтому генератор стремится выражение $1-D(G(z^{(i)}))$ минимизировать.
+Затем эти потери складываются вместе и получается выражение:
+![[Pasted image 20240111182331.png]]
+По формуле можно заметить, что по отношению к генератору эти значения необходимо минимизировать.
+$x$ берётся из каких-то реальных данных. $z$ - ожидаемое значение, которое берётся из некоторого случайного распределения $z$.
+Для упрощения обучения используется второй вариант (связано с получаемыми градиентами).
+
 ## **How GANs work**
 
 GANs are a type of **generative** models, which observe many sample distributions and generate more samples of the same distribution. Other generative models include variational autoencoders ([VAE](https://arxiv.org/abs/1906.02691)) and [Autoregressive](https://arxiv.org/abs/1601.06759) models.

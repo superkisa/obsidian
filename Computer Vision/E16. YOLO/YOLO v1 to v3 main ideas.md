@@ -1,3 +1,4 @@
+Понятная [статья](https://habr.com/ru/articles/556404/)
 ![[Pasted image 20240111031753.png]]
 
 ![[Pasted image 20240111032459.png]]
@@ -53,6 +54,9 @@ Some boxes are overlapping
 
 In YOLO v1 there was 2 objects for each cell. 
 
+[Вот тут](https://habr.com/ru/articles/460869/#:~:text=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20YOLOv3%20%D0%B2%20%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B0%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%20%D1%82%D1%80%D0%B8%20%D1%81%D0%BB%D0%BE%D1%8F) как-то для меня понятнее расписали, как формируется выход сети:
+![[Pasted image 20240111223607.png]]
+
 Также можно увидеть, что изначально картинку делили на 49 частей, 7х7. И для каждой клетки вот это все прогнозировалось при условии, что там обнаружен объект.
 
 ![[Pasted image 20240111042743.png]]
@@ -85,4 +89,44 @@ How did they join datasets?
 
 ![[Pasted image 20240111045420.png]]
 
-to be continued...
+Взяли из 22k только 9k, так как CE работает не очень хорошо, когда так много классов. 
+
+![[Pasted image 20240111121755.png]]
+
+![[Pasted image 20240111121814.png]]
+
+![[Pasted image 20240111121841.png]]
+
+![[Pasted image 20240111121854.png]]
+
+WordTree было сделано вручную.
+
+![[Pasted image 20240111122024.png]]
+
+Таким образом можно было совместить 2 этих датасета, так как всегда можно остановится на определенном уровне.
+
+![[Pasted image 20240111122142.png]]
+
+Здесь мы считаем несколько softmax на каждом уровне.
+
+### Yolov3
+
+https://pjreddie.com/darknet/yolo/ - this site is about yolov3 by authors
+
+Если посмотреть на график справа
+
+![[Pasted image 20240111030536.png]]
+
+То можно уивдеть, что YOLOv2 сильно отстает по показателям от моделей. Но не YOLOv3
+
+![[Pasted image 20240111122935.png]]
+
+https://arxiv.org/pdf/1804.02767.pdf - here you can find scientific paper of YOLOv3
+
+1) They added corrections for bounding boxes
+![[Pasted image 20240111130018.png]]
+![[Pasted image 20240111130044.png]]
+
+2) They make predictions across scales
+They use 3 different networks. One network for small size, one network median size, one network for bigger size. It's started to be possible because of development of GPUs.
+3) They increase size of convolutional network
