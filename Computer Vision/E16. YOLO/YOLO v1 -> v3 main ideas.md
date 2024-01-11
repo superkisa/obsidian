@@ -57,6 +57,23 @@ In YOLO v1 there was 2 objects for each cell.
 
 ![[Pasted image 20240111042743.png]]
 
-### How to make YOLOv1 more accurate?
+### How to make YOLOv1 more accurate? YOLO v2
+
+![[Pasted image 20240111044539.png]]
 
 1) They used more datasets. They pretrained model in ImageNet and then fine-tune it in coco.
+Тут стоит подчеркнуть, что количество классов также сильно увеличилось.
+
+![[Pasted image 20240111044630.png]]
+
+2) Also they take more anchors
+3) They did multi-scale training
+
+![[Pasted image 20240111044747.png]]
+
+They train their convolutional layers over different size of input data
+
+As a result, 
+
+![[Pasted image 20240111044929.png]]
+
