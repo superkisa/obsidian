@@ -1,5 +1,10 @@
 [Ссылка](https://pyimagesearch.com/2021/09/13/intro-to-generative-adversarial-networks-gans/)
 ![[Pasted image 20240111011106.png]]
+
+
+
+
+
 ## **How GANs work**
 
 GANs are a type of **generative** models, which observe many sample distributions and generate more samples of the same distribution. Other generative models include variational autoencoders ([VAE](https://arxiv.org/abs/1906.02691)) and [Autoregressive](https://arxiv.org/abs/1601.06759) models.
