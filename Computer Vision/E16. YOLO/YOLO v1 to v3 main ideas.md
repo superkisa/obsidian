@@ -85,4 +85,4 @@ How did they join datasets?
 
 ![[Pasted image 20240111045420.png]]
 
-to be continued...
+Взяли из 22k только 9k, так как CE работает не очень хорошо, когда так много классов. 
