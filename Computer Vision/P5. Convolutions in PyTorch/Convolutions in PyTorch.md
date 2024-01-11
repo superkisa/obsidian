@@ -35,3 +35,12 @@
 	Например, низкоуровневые слои могут быть обучены распознавать простые геометрические формы, такие как линии и края, в то время как более глубокие слои могут быть обучены распознавать более сложные формы, такие как лица или автомобили. Это позволяет сетям обучаться распознавать более сложные объекты, используя простые, уже известные шаблоны [3](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Yan_HD-CNN_Hierarchical_Deep_ICCV_2015_paper.pdf).
 	
 	Иерархическое обучение признаков также позволяет сетям лучше адаптироваться к новым данным. Когда сеть сталкивается с новым объектом, который она ранее не видела, она может использовать свои уже изученные простые шаблоны для начала распознавания этого нового объекта, а затем продолжать обучение на более сложных уровнях для улучшения своего распознавания [5](https://ai.stackexchange.com/questions/31972/when-can-we-call-a-feature-hierarchical).
+
+
+1. **Model parameters** $\longrightarrow$ How many params will model have if we'll use this conv layer, and what if we'll use 3 conv layers of one type, 10 of second type and 20 of third one? We can theoretically compute and analyze this things without any additional tools
+
+2. **$\Delta H, \Delta W, \Delta C$** $\longrightarrow$ What will happen to the image after going through this conv layer? Especially important when you want to stack **a lot** of them one after another or create atypical architecture
+
+3. **Receptive field** $\longrightarrow$ How to interpret model results and find what went wrong, or how exactly model solved the case? How big of a patterns model can phisically capture?
+
+4. **It's not just magic!** $\longrightarrow$ **It's cooler, it's mathematical magic!!!** And you can calculate and compute it in any way you want
