@@ -35,3 +35,4 @@ Here we have less weights.
 
 This works faster, but disadvantage is that we can't change number of channels..(
 
+If you don;t want to overfit model with small data, use depthwise convolution
