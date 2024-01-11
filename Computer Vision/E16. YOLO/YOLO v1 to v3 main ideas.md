@@ -67,7 +67,7 @@ In YOLO v1 there was 2 objects for each cell.
 ![[Pasted image 20240111044630.png]]
 
 2) Also they take more anchors
-3) They did multi-scale training
+3) They did multi-scale training (подавали на вход сети изображения те же, но масштабированные)
 
 ![[Pasted image 20240111044747.png]]
 
