@@ -7,7 +7,7 @@ This transform is related to difference in eye and camera light perception, [see
 #### [Morphology](https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html):
 ![[Pasted image 20240110192603.png]]
  1. Erosion -- делает линии тоньше (make lines thiner)
-```
+```python
     import cv2 as cv
 	import numpy as np
 	img = cv.imread('j.png', cv.IMREAD_GRAYSCALE)
