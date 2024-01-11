@@ -41,6 +41,8 @@ In this point we get set of bounding boxes, which we think could contain some ob
 
 ![[Pasted image 20240111041522.png]]
 
+And finally we use Non Maximum Suppression to get the result.
+
 ### The  problem of YOLO
 
 Some boxes are overlapping
@@ -49,4 +51,9 @@ Some boxes are overlapping
 
 ![[Pasted image 20240111042312.png]]
 
-In YOLO v1 there was 2 objects
+In YOLO v1 there was 2 objects for each cell. 
+
+Также можно увидеть, что изначально картинку делили на 49 частей, 7х7. И для каждой клетки вот это все прогнозировалось при условии, что там обнаружен объект.
+
+![[Pasted image 20240111042743.png]]
+
