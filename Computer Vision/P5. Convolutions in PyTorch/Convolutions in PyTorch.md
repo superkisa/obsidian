@@ -38,9 +38,11 @@
 
 
 1. **Model parameters** $\longrightarrow$ How many params will model have if we'll use this conv layer, and what if we'll use 3 conv layers of one type, 10 of second type and 20 of third one? We can theoretically compute and analyze this things without any additional tools
+	The number of parameters in a convolutional layer depends on the size of the filters, the stride, and the number of input channels. If we have a filter size of F x F, a stride of S, and an input with C channels, then the number of parameters in a single convolutional layer is (F x F x C) + C (for bias term). For instance, if we have three types of layers with 10 filters of size 3x3 each, we would have (3x3xC) + C * 10 = 3x3xC + 10C parameters. For the second type of layer, if we have 10 filters of size 5x5 each, we would have (5x5xC) + C * 10 = 5x5xC + 10C parameters. For the third type of layer, if we have 20 filters of size 7x7 each, we would have (7x7xC) + C * 20 = 7x7xC + 20C parameters [1](https://distill.pub/2019/computing-receptive-fields).
 
 2. **$\Delta H, \Delta W, \Delta C$** $\longrightarrow$ What will happen to the image after going through this conv layer? Especially important when you want to stack **a lot** of them one after another or create atypical architecture
+	**ΔH, ΔW, ΔC**: After passing through a convolutional layer, the height and width of the feature maps will be reduced depending on the stride and padding. If we use a stride of 1 and no padding, the height and width will remain the same. If we use a stride of 2 and no padding, the height and width will be halved. The depth of the feature maps will be equal to the number of filters applied. For instance, if we have 10 filters, the depth of the output will be 10 [1](https://distill.pub/2019/computing-receptive-fields).
 
-3. **Receptive field** $\longrightarrow$ How to interpret model results and find what went wrong, or how exactly model solved the case? How big of a patterns model can phisically capture?
+4. **Receptive field** $\longrightarrow$ How to interpret model results and find what went wrong, or how exactly model solved the case? How big of a patterns model can phisically capture?
 
-4. **It's not just magic!** $\longrightarrow$ **It's cooler, it's mathematical magic!!!** And you can calculate and compute it in any way you want
+5. **It's not just magic!** $\longrightarrow$ **It's cooler, it's mathematical magic!!!** And you can calculate and compute it in any way you want
