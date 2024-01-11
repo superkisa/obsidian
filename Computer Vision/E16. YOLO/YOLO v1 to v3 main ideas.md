@@ -119,4 +119,10 @@ https://pjreddie.com/darknet/yolo/ - this site is about yolov3 by authors
 
 https://arxiv.org/pdf/1804.02767.pdf - here you can find scientific paper of YOLOv3
 
-They added corrections for bounding boxes
+1) They added corrections for bounding boxes
+![[Pasted image 20240111130018.png]]
+![[Pasted image 20240111130044.png]]
+
+2) They make predictions across scales
+They use 3 different networks. One network for small size, one network median size, one network for bigger size. It's started to be possible because of development of GPUs.
+3) They increase size of convolutional network
