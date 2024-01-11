@@ -57,5 +57,10 @@ So, weights, corresponding to one convolutional layers are: $$((K_h * K_w * C_{i
 2. **$\Delta H, \Delta W, \Delta C$** $\longrightarrow$ What will happen to the image after going through this conv layer? Especially important when you want to stack **a lot** of them one after another or create atypical architecture
 	**ΔH, ΔW, ΔC**: After passing through a convolutional layer, the height and width of the feature maps will be reduced depending on the stride and padding. If we use a stride of 1 and no padding, the height and width will remain the same. If we use a stride of 2 and no padding, the height and width will be halved. The depth of the feature maps will be equal to the number of filters applied. For instance, if we have 10 filters, the depth of the output will be 10 [1](https://distill.pub/2019/computing-receptive-fields).
 3. **Receptive field** $\longrightarrow$ How to interpret model results and find what went wrong, or how exactly model solved the case? How big of a patterns model can phisically capture?
+	 How much of a pattern model can possibly see?
+	 If convolutional model has only one layer, then the biggest possible pattern that model can capture is $K_h \times K_w$
+	 If we'll use many small kernels consecutively, the last layer will be able to capture a patterns way bigger then it's kernel size. Receptive field - zone, from which a particular neuron actually takes information
+	 And... that's exactly the reason why we **STACK MORE LAYERS!!!** $\longrightarrow$ it's just cheaper and more effective to have few small kernels, instead of one big
+	 
 	 **Receptive field**: The receptive field of a convolutional layer refers to the region in the input space that contributes to the activation of a particular unit in the feature map. It can be calculated as the product of the strides of the convolutional layers. For instance, if we have a stride of 1 in the first layer, 2 in the second layer, and 3 in the third layer, the total receptive field would be 1 * 2 * 3 = 6. This means that the unit in the feature map is sensitive to the input within a 6x6 region [4](https://theaisummer.com/receptive-field/).
 
