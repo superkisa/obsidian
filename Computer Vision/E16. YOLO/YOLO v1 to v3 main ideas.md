@@ -117,3 +117,5 @@ https://pjreddie.com/darknet/yolo/ - this site is about yolov3 by authors
 
 ![[Pasted image 20240111122935.png]]
 
+https://arxiv.org/pdf/1804.02767.pdf - here you can find scientific paper of YOLOv3
+
