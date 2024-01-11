@@ -77,3 +77,7 @@ As a result,
 
 ![[Pasted image 20240111044929.png]]
 
+They also written their own framework for neural networks and their own backbone architecture (darknet19), which was pretrained on data
+
+![[Pasted image 20240111045206.png]]
+
