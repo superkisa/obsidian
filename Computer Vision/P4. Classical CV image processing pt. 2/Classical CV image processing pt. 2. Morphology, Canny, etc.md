@@ -2,16 +2,18 @@
 #### [Morphology](https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html):
 ![[Pasted image 20240110192603.png]]
  1. Erosion -- делает линии тоньше (make lines thiner)
-```
-    import cv2 as cv
-	import numpy as np
-	img = cv.imread('j.png', cv.IMREAD_GRAYSCALE)
-	kernel = np.ones((5,5),np.uint8)
-	erosion = cv.erode(img,kernel,iterations = 1)
+```python
+import cv2 as cv
+import numpy as np
+img = cv.imread('j.png', cv.IMREAD_GRAYSCALE)
+kernel = np.ones((5,5),np.uint8)
+erosion = cv.erode(img,kernel,iterations = 1)
 ```
 ![[Pasted image 20240110192641.png]]
  2. Dilation -- делает линии толще (makes lines thiker)
-    `dilation = cv.dilate(img,kernel,iterations = 1)`
+```python
+dilation = cv.dilate(img,kernel,iterations = 1)
+```
     ![[Pasted image 20240110192841.png]]
 3. Opening -- erosion потом dilation (erosion fallowed by delation). Убирает мелкий белый шум.
 	   `opening = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)`
