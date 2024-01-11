@@ -57,3 +57,6 @@ In YOLO v1 there was 2 objects for each cell.
 
 ![[Pasted image 20240111042743.png]]
 
+### How to make YOLOv1 more accurate?
+
+1) They used more datasets. They pretrained model in ImageNet and then fine-tune it in coco.
