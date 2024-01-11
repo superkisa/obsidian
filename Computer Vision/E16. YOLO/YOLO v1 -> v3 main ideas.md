@@ -41,3 +41,7 @@ In this point we get set of bounding boxes, which we think could contain some ob
 
 ![[Pasted image 20240111041522.png]]
 
+### The  problem of YOLO
+
+Some boxes are overlapping
+
