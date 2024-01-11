@@ -62,3 +62,11 @@ DSC - a measure of the similarity between the predicted segmentation and the gro
 DSC = 2*(Intersection of predicted and ground truth mask) / (Size of predicted mask + Size of ground truth mask) 
 
 It is important to note that, even though IoU and DSC are both commonly used in evaluating segmentation algorithms they are not always interchangeable and the choice of metric often depends on the specific application. 
+
+#### Focal Loss
+
+![[Pasted image 20240111030536.png]]
+
+Суть в том, что при CE мы пытаемся просто хорошо классфицировать объекты, из-за чего пытаемся даже улучшать объекты, которые показывают 80%, 90%, чтобы устремить к 100%. Это видно на графике
+
+А если посмотрите на Focal Loss, то тут ситуация интереснее. Допустим при gamma = 5 наша модель уже не будет штрафовать или как-то реагировать на прогнозы с 60% вероятностью! То есть благодаря данному лоссу, мы можем сфокусировать модель именно на низких вероятностях при верности ответа.
