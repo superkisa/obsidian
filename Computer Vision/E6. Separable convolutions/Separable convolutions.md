@@ -25,3 +25,13 @@ Let's suppose that we have kernel and can transform kernel in such way
 
 ![[Pasted image 20240111180241.png]]
 
+![[Pasted image 20240111180853.png]]
+
+In the second image we have 256 chennels, because we apply 256 kernels 
+
+![[Pasted image 20240111180955.png]]
+
+Here we have less weights.
+
+This works faster, but disadvantage is that we can't change number of channels..(
+
