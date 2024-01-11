@@ -82,7 +82,7 @@ or mosaicing (?) короче что-то с мазаикой, но тип он�
 Обратный процесс называется demosaicing (так что ли или короче демозаика :) ) or debayerisation
 The raw images coming from the camera are bayerized. They are represented as a two-dimensional array, where individual pixels encode the intensity of blue, green, and red colors.
 ![[Pasted image 20240111001932.png]]
-```
+```python
 def rgb_to_bayer(img_rgb: np.ndarray) -> np.ndarray:
     H, W = img_rgb.shape[0], img_rgb.shape[1]
     bayer_img = np.zeros((H, W))
