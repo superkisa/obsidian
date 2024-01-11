@@ -109,3 +109,11 @@ WordTree было сделано вручную.
 
 https://pjreddie.com/darknet/yolo/ - this site is about yolov3 by authors
 
+Если посмотреть на график справа
+
+![[Pasted image 20240111030536.png]]
+
+То можно уивдеть, что YOLOv2 сильно отстает по показателям от моделей. Но не YOLOv3
+
+![[Pasted image 20240111122935.png]]
+
