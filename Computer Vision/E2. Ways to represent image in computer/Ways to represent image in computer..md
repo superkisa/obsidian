@@ -32,3 +32,5 @@ The CMYK colour space is a subtractive colour model that is used in print media.
 **HSL Colour Space**
 
 The HSL colour space is a colour model that is used to define colours based on their hue, saturation, and lightness. Hue is the actual colour of the object, saturation is the intensity of the colour, and lightness is how light or dark the colour is. In the HSL colour space, hue is represented by a degree value between 0 and 360, saturation is represented by a percentage value between 0% and 100%, and lightness is represented by a percentage value between 0% and 100%.
+
+Дописать треугольник цветов, картинки с цветовыми пространствами, фильтр Байера. 
