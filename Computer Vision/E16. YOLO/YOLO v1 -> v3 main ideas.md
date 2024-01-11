@@ -45,3 +45,8 @@ In this point we get set of bounding boxes, which we think could contain some ob
 
 Some boxes are overlapping
 
+### Original Yolo
+
+![[Pasted image 20240111042312.png]]
+
+In YOLO v1 there was 2 objects
