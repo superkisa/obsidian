@@ -39,16 +39,19 @@
 #### **Params of the layer**
 https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
 input: $H \times W \times C_{in}$
-1. Kernel\_size $\longrightarrow$ $K_{h} \times K_{w}$
-2. Input and output channels $\longrightarrow$ $C_{in}$, $C_{out}$
-3. Padding $\longrightarrow$ how much zeroes (or other specified elements) should be added on each side of the image $P$, default 0
-4. Stride $\longrightarrow$ distance between two adjacent positions of the kernel on the original image $S$, default 1
-5. Dilation $\longrightarrow$ distance between each two adjacent elements inside the kernel $D$, default 1
-6. Bias $\longrightarrow$ linear addition to each output channel $B$, default True
+1. Kernel\_size $\longrightarrow$ $[K_{h} \times K_{w}]$
+2. Input and output channels $\longrightarrow$ $[C_{in}$, $C_{out}]$
+3. Padding $\longrightarrow$ how much zeroes (or other specified elements) should be added on each side of the image $[P$, default 0]
+4. Stride $\longrightarrow$ distance between two adjacent positions of the kernel on the original image $[S$, default 1]
+5. Dilation $\longrightarrow$ distance between each two adjacent elements inside the kernel $[D$, default 1]
+6. Bias $\longrightarrow$ linear addition to each output channel $[B$, default True]
 output: $H' \times W' \times C_{out}$
 
+#### Model parameters
+Depends on $K_h, K_w, C_{in}, C_{out}, B$
+Actual kernel, moving across the image, has size $K_h \times K_w \times C_{in}$. Then, for each output channel we have one **different** kernel of this size and one bias value, if $B = \text{true}$
+So, weights, corresponding to one convolutional layers are: $$((K_h * K_w * C_{in}) + B) * C_{out}$$
 ####
-
 1. **Model parameters** $\longrightarrow$ How many params will model have if we'll use this conv layer, and what if we'll use 3 conv layers of one type, 10 of second type and 20 of third one? We can theoretically compute and analyze this things without any additional tools
 	The number of parameters in a convolutional layer depends on the size of the filters, the stride, and the number of input channels. If we have a filter size of F x F, a stride of S, and an input with C channels, then the number of parameters in a single convolutional layer is (F x F x C) + C (for bias term). For instance, if we have three types of layers with 10 filters of size 3x3 each, we would have (3x3xC) + C * 10 = 3x3xC + 10C parameters. For the second type of layer, if we have 10 filters of size 5x5 each, we would have (5x5xC) + C * 10 = 5x5xC + 10C parameters. For the third type of layer, if we have 20 filters of size 7x7 each, we would have (7x7xC) + C * 20 = 7x7xC + 20C parameters [1](https://distill.pub/2019/computing-receptive-fields).
 2. **$\Delta H, \Delta W, \Delta C$** $\longrightarrow$ What will happen to the image after going through this conv layer? Especially important when you want to stack **a lot** of them one after another or create atypical architecture
