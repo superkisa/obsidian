@@ -36,3 +36,9 @@ Here we have less weights.
 This works faster, but disadvantage is that we can't change number of channels..(
 
 If you don;t want to overfit model with small data, use depthwise convolution
+
+![[Pasted image 20240111181618.png]]
+
+This approach used in ResNet, for instance.
+
+It is a linear layer over channels.
