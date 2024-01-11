@@ -33,7 +33,7 @@ In this point we get set of bounding boxes, which we think could contain some ob
 
 ![[Pasted image 20240111041143.png]]
 
-4) Then to predict a class of an object in bounding box we do not crop it, because it is costy action. Intead of, we predict class for each cell.
+4) Then to predict a class of an object in bounding box we do not crop it, because it is an expensive action. Instead of, we predict class for each cell.
 
 ![[Pasted image 20240111041346.png]]
 
