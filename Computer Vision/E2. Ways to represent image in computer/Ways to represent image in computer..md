@@ -24,15 +24,17 @@ The choice of image representation depends on the specific computer vision task 
 **RGB Colour Space**
 
 The RGB colour space is an additive colour model that is used to display colours on electronic displays, such as computer monitors and televisions. It uses three primary colors: red, green, and blue, to create all other colors. In the RGB color space, each color is represented by a combination of red, green, and blue values, ranging from 0 to 255.
-![[Pasted image 20240112181708.png]]
+![[Pasted image 20240112181855.png]]
 
  **CMYK Colour Space**
 
 The CMYK colour space is a subtractive colour model that is used in print media. It uses four primary colours: cyan, magenta, yellow, and black (also known as key), to create all other colours. In the CMYK colour space, each colour is represented by a combination of cyan, magenta, yellow, and black values, ranging from 0 to 100.
+![[Pasted image 20240112181820.png]]
 
 **HSL Colour Space**
 
 The HSL colour space is a colour model that is used to define colours based on their hue, saturation, and lightness. Hue is the actual colour of the object, saturation is the intensity of the colour, and lightness is how light or dark the colour is. In the HSL colour space, hue is represented by a degree value between 0 and 360, saturation is represented by a percentage value between 0% and 100%, and lightness is represented by a percentage value between 0% and 100%.
+![[Pasted image 20240112181955.png]]
 
 # Bayer filter
 
