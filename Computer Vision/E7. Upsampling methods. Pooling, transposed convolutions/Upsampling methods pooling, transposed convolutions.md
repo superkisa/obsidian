@@ -38,4 +38,7 @@ In summary, transpose convolution is a technique used in neural networks for inc
 [Source](https://towardsdatascience.com/what-is-transposed-convolutional-layer-40e5e6e31c11) (VPN)
 ![[Pasted image 20240112195612.png]]
 ![[Pasted image 20240112195741.png]]
+![[1_SpxCUPzNfb9C8TiAcrRr5A.gif]]
+![[1_gff0oa2iPygyCEjj7Fb3yg.gif]]
+![[1_WaBzh5OkmD-9EBLy5aXiug.gif]]
 ![[1_L_hJRnywTpeTFJAaVZTRfQ.gif]]
