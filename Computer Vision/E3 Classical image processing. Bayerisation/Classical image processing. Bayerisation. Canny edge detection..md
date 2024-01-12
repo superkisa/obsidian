@@ -25,7 +25,7 @@ This transform is related to difference in eye and camera light perception, [see
 3. Opening -- erosion потом dilation (erosion fallowed by delation). Убирает мелкий белый шум.
 	   `opening = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)`
 	   ![[Pasted image 20240110193050.png]]
-   1. Closing -- dilation потом erosion (dilation fallowed by erosion). Убирает мелкий черный шум на белом фоне.
+   4. Closing -- dilation потом erosion (dilation fallowed by erosion). Убирает мелкий черный шум на белом фоне.
 	`closing = cv.morphologyEx(img, cv.MORPH_CLOSE, kernel)`
       ![[Pasted image 20240110193253.png]]
 5.  Morphological Gradient = dilation - erosion (It is the difference between dilation and erosion of an image). Выделяет границу объекта.
@@ -65,7 +65,7 @@ __Подходы к построению остова__
 5. **Трассировка области неоднозначности**. Итоговые границы определяются путём подавления всех краёв, несвязанных с определенными (сильными) границами.
 
 #### Circular Hough Transform
-ищет кружочки на картинках (и эллипсы)
+ищет линии и кружочки на картинках (и эллипсы)
 [Wiki on lines detection](https://en.wikipedia.org/wiki/Hough_transform)
 [skimage linear doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_line_hough_transform.html)
 [skimage circular doc](https://scikit-image.org/docs/stable/auto_examples/edges/plot_circular_elliptical_hough_transform.html)
