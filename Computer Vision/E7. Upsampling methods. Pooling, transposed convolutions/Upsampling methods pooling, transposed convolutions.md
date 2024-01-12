@@ -8,9 +8,6 @@ Upsampling или Unpooling - это метод противоположный p
 
 ## Transposed convolution
 
-![[Pasted image 20240110190531.png]]
-
-
 Transpose convolution is a technique used for upsampling or increasing the resolution of feature maps in neural networks. Let's delve a bit deeper into transpose convolution in simple terms:
 
 1. **Basic Convolution Recap:**
