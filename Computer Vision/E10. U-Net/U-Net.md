@@ -1,3 +1,5 @@
+
+https://paperswithcode.com/method/u-net
 U-Net - это модель, которая решает задачу сегментации
 
 ![[Pasted image 20240111012950.png]]
