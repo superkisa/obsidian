@@ -44,6 +44,10 @@ The mAP value is calculated the following way:
 
 **How mAP is different from precision?** 
 It is different from a simple precision in a way that, average precision gives overall performance of model for all recalls and precisions, whereas precision is only one number representing model performance at a particular recall point. 
+![[Pasted image 20240112184421.png]]
+![[Pasted image 20240112184509.png]]
+![[Pasted image 20240112184524.png]]
+![[Pasted image 20240112184539.png]]
 #### What are the disadvantages of mAP? 
 One disadvantage is that ==mAP does not take into account the confidence score== of the predictions, which can lead to problems when comparing models that make different numbers of predictions.  
 **For example**, a model that makes many low-confidence predictions will typically have a lower mAP than a model that makes fewer high-confidence predictions, even if the latter model is less accurate overall. 
