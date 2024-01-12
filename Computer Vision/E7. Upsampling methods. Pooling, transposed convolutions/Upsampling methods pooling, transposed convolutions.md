@@ -25,7 +25,8 @@ Transpose convolution is a technique used for upsampling or increasing the resol
 3. **Learnable Parameters:**
     
     - Transposed convolution involves learnable parameters, just like regular convolution. These parameters are adjusted during the training process based on the error between the predicted and actual output. The network learns how to spread and refine information during upsampling.
-4. **Stride and Padding:**
+    - Learnable parameters: filter weight, bias term, stride, padding
+1. **Stride and Padding:**
     
     - Stride determines how much the filter moves between each operation. In transpose convolution, a stride greater than 1 can be used to increase the output size. Padding can also be applied to control the spatial dimensions of the output.
 5. **Upsampling Factor:**
@@ -37,4 +38,3 @@ Transpose convolution is a technique used for upsampling or increasing the resol
 
 In summary, transpose convolution is a technique used in neural networks for increasing the resolution of feature maps. It involves a learnable operation that spreads and refines information to produce a higher-resolution output. This is particularly useful in tasks such as image generation, where the network needs to generate detailed and realistic images.
 
->>>>>>> Stashed changes
