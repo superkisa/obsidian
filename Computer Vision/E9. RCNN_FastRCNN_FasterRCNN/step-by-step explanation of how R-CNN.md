@@ -32,3 +32,4 @@ The R-CNN training process involves several steps, and while there aren't explic
     - The trained network can also be used to process entire test images, and the classification scores can be visualized to identify any issues.
 
 The process described above is iterative and may require several rounds of training and validation to achieve a well-performing object detector. The specific training options, such as learning rate and epochs, can be adjusted based on the performance observed during training and validation.
+
