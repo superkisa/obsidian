@@ -1,5 +1,7 @@
 [[Difference between the three]]
 
+[Artical about these three](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/)
+
 Firstly, we should understand, that this models solve detection task in CV.
 Generally, Detection task is
 ![[Pasted image 20240110003527.png]]
