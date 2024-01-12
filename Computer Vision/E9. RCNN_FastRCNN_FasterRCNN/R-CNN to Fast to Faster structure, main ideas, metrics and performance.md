@@ -105,11 +105,27 @@ Presentation
 
 ## Faster R-CNN
 
-![[Pasted image 20240110180458.png]]
+Some additional info
+	Faster R-CNN is an extension of Fast R-CNN that further improves its speed and performance. It incorporates a Region Proposal Network (RPN) directly into the network architecture, eliminating the need for a separate region proposal stage. Here's a detailed explanation of how Faster R-CNN works:
+	1. **Region Proposals**: Unlike R-CNN and Fast R-CNN, which rely on external methods like selective search to generate region proposals, Faster R-CNN includes a built-in RPN that generates region proposals directly within the network. The RPN uses anchor boxes to propose potential object locations in the image [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
+	2. **Shared Convolutional Layers**: Similar to Fast R-CNN, Faster R-CNN also shares the convolutional layers between the RPN and the rest of the network. This allows the network to share computations across all region proposals, significantly increasing efficiency [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
+	3. **ROI Pooling**: After the convolutional layers, Faster R-CNN introduces a new layer called Region of Interest (ROI) Pooling. This layer extracts fixed-size feature vectors from each proposed region. It splits each region proposal into a grid of cells, applies max pooling to each cell, and concatenates all values to form a feature vector for that region proposal [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
+	4. **Classification and Bounding Box Regression**: The ROI Pooling layer feeds the pooled feature vectors into fully connected layers for classification and bounding box regression. The classification layer assigns each region proposal to a class, while the regression layer refines the bounding box coordinates of each region proposal [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
+	The architecture of Faster R-CNN is shown in the next figure. It consists of 2 modules:
+	1. **RPN**: For generating region proposals.
+	2. **Fast R-CNN**: For detecting objects in the proposed regions.
+	The RPN module is responsible for generating region proposals. It applies the concept of attention in neural networks, so it guides the Fast R-CNN detection module to where to look for objects in the image.
+	![[Pasted image 20240112154822.png]]
+	 Note how the convolutional layers (e.g. computations) are shared across both the RPN and the Fast R-CNN modules.
+	One drawback of Faster R-CNN is that the RPN is trained where all anchors in the mini-batch, of size 256, are extracted from a single image. Because all samples from a single image may be correlated (i.e., their features are similar), the network may take a long time until reaching convergence [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
 
-![[Pasted image 20240111040115.png]]
-
-![[Pasted image 20240111045714.png]]
-
-![[Pasted image 20240111045732.png]]
+Presentation
+	
+	![[Pasted image 20240110180458.png]]
+	
+	![[Pasted image 20240111040115.png]]
+	
+	![[Pasted image 20240111045714.png]]
+	
+	![[Pasted image 20240111045732.png]]
 
