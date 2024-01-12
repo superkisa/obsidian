@@ -34,15 +34,6 @@ But the most popular one is Selective Search. We will not go into details about 
 
 #### R-CNN
 
-![[Pasted image 20240110131646.png]]
-
-But there is some question: how to solve bbox regression? There is a problem, because predifined bbox can be not similiar to the ground true bbox.
-
-We can predict not  coordinates of bboxes, but transformation.
-(tx, ty, tn, tw)
-
-![[Pasted image 20240110133726.png]]
-
 Some additional info
 	Here's a [[step-by-step explanation of how R-CNN]] works:
 	1. **Region Proposals**: The first step in R-CNN is to generate region proposals. This is done using a technique known as [[Selective search]], which divides the image into small regions and proposes regions that likely contain an object. Approximately 2000 region proposals are generated [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
@@ -50,29 +41,33 @@ Some additional info
 	3. **Classification**: Once the features have been extracted, they are passed to a linear [[Support Vector Machine (SVM)]] to classify whether each region proposal contains an object and what class of object it is [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	4. **Bounding Box Regression**: Finally, a separate regression model is trained to predict the exact location of the object within the region proposal. This is done by predicting the coordinates of the bounding box around the object [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	Despite its effectiveness, R-CNN has some limitations. Because it uses selective search to generate region proposals, the quality of these proposals can vary, leading to poor object detection. Additionally, R-CNN is computationally expensive due to the large number of region proposals and the need to run the entire CNN on each one. These drawbacks led to the development of faster and more efficient versions of R-CNN, such as Fast R-CNN and Faster R-CNN [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/), [2](https://blog.roboflow.com/what-is-r-cnn/amp/).
-	![[Pasted image 20240112145045.png]]
+		![[Pasted image 20240112145045.png]]
 
-Let's see steps of training R-CNN models
-
-![[Pasted image 20240110135047.png]]
-
-![[Pasted image 20240110135217.png]]
-
-![[Pasted image 20240110135427.png]]
-
-![[Pasted image 20240110135455.png]]
-
-![[Pasted image 20240110135529.png]]
-
-Let's see the results of R-CNN
-
-![[Pasted image 20240110135909.png]]
-
-But this model has problems
-
-![[Pasted image 20240110135957.png]]
-
-You can see that it has bad performance, it's very slow model, because of the first point above
+Presemtation
+	![[Pasted image 20240110131646.png]]
+	But there is some question: how to solve bbox regression? There is a problem, because predifined bbox can be not similiar to the ground true bbox.
+	We can predict not  coordinates of bboxes, but transformation.
+	(tx, ty, tn, tw)
+	
+	![[Pasted image 20240110133726.png]]
+	Let's see steps of training R-CNN models
+	
+	![[Pasted image 20240110135047.png]]
+	
+	![[Pasted image 20240110135217.png]]
+	
+	![[Pasted image 20240110135427.png]]
+	
+	![[Pasted image 20240110135455.png]]
+	
+	![[Pasted image 20240110135529.png]]
+	Let's see the results of R-CNN
+	
+	![[Pasted image 20240110135909.png]]
+	But this model has problems
+	
+	![[Pasted image 20240110135957.png]]
+	You can see that it has bad performance, it's very slow model, because of the first point above
 
 ## Fast R-CNN
 ![[Pasted image 20240110140403.png]]
