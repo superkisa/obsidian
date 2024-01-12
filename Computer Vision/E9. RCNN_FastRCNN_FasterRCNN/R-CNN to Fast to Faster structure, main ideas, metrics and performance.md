@@ -41,7 +41,8 @@ Some additional info
 	3. **Classification**: Once the features have been extracted, they are passed to a linear [[Support Vector Machine (SVM)]] to classify whether each region proposal contains an object and what class of object it is [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	4. **Bounding Box Regression**: Finally, a separate regression model is trained to predict the exact location of the object within the region proposal. This is done by predicting the coordinates of the bounding box around the object [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	Despite its effectiveness, R-CNN has some limitations. Because it uses selective search to generate region proposals, the quality of these proposals can vary, leading to poor object detection. Additionally, R-CNN is computationally expensive due to the large number of region proposals and the need to run the entire CNN on each one. These drawbacks led to the development of faster and more efficient versions of R-CNN, such as Fast R-CNN and Faster R-CNN [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/), [2](https://blog.roboflow.com/what-is-r-cnn/amp/).
-		![[Pasted image 20240112145045.png]]
+	![[Pasted image 20240112145045.png]]
+	![[Pasted image 20240112152517.png]]
 
 Presentation
 	![[Pasted image 20240110131646.png]]
@@ -78,6 +79,7 @@ Some additional info
 	3. **ROI Pooling**: After the convolutional layers, Fast R-CNN introduces a new layer called Region of Interest (ROI) Pooling. This layer extracts fixed-size feature vectors from each region proposal. It splits each region proposal into a grid of cells, applies max pooling to each cell, and concatenates all values to form a feature vector for that region proposal [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
 	4. **Classification and Bounding Box Regression**: The ROI Pooling layer feeds the pooled feature vectors into fully connected layers for classification and bounding box regression. The classification layer assigns each region proposal to a class, while the regression layer refines the bounding box coordinates of each region proposal [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
 	One limitation of Fast R-CNN is that it still relies on the time-consuming Selective Search algorithm for generating region proposals. Another downside is that while Fast R-CNN shares computations across multiple proposals, it does not cache the extracted features, which could lead to increased memory usage [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
+	![[Pasted image 20240112152418.png]]
 
 Presentation
 	![[Pasted image 20240110140403.png]]
