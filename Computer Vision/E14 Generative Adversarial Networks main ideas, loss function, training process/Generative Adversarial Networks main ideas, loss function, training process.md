@@ -63,3 +63,6 @@ We’ve seen a lot of Image-to-Image translation examples by GANs. We could also
 
 Combining NLP and computer vision has become a popular research area in recent years. Here are a few examples: [StyleCLIP](https://github.com/orpatashnik/StyleCLIP) and [Taming Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2012.09841v3).
 ![[Pasted image 20240111012226.png]]
+
+
+https://neptune.ai/blog/gan-loss-functions#:~:text=The%20standard%20GAN%20loss%20function%2C,of%20the%20loss%20seemed%20effective
