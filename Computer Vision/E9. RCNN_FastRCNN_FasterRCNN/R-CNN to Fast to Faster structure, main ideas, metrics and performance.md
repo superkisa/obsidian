@@ -50,6 +50,7 @@ Some additional info
 	3. **Classification**: Once the features have been extracted, they are passed to a linear Support Vector Machine (SVM) to classify whether each region proposal contains an object and what class of object it is [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	4. **Bounding Box Regression**: Finally, a separate regression model is trained to predict the exact location of the object within the region proposal. This is done by predicting the coordinates of the bounding box around the object [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	Despite its effectiveness, R-CNN has some limitations. Because it uses selective search to generate region proposals, the quality of these proposals can vary, leading to poor object detection. Additionally, R-CNN is computationally expensive due to the large number of region proposals and the need to run the entire CNN on each one. These drawbacks led to the development of faster and more efficient versions of R-CNN, such as Fast R-CNN and Faster R-CNN [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/), [2](https://blog.roboflow.com/what-is-r-cnn/amp/).
+
 Let's see steps of training R-CNN models
 
 ![[Pasted image 20240110135047.png]]
