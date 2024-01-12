@@ -44,7 +44,7 @@ We can predict not  coordinates of bboxes, but transformation.
 ![[Pasted image 20240110133726.png]]
 
 Some additional info
-	Here's a step-by-step explanation of how R-CNN works:
+	Here's a [[step-by-step explanation of how R-CNN]] works:
 	1. **Region Proposals**: The first step in R-CNN is to generate region proposals. This is done using a technique known as [[Selective search]], which divides the image into small regions and proposes regions that likely contain an object. Approximately 2000 region proposals are generated [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
 	2. **Feature Extraction**: Next, these region proposals are fed into a CNN to extract features. The CNN consists of several convolutional layers followed by pooling layers. The purpose of this step is to convert the raw pixel values of the image into a set of high-level features that capture the important characteristics of the objects in the image [2](https://blog.roboflow.com/what-is-r-cnn/amp/).
 	3. **Classification**: Once the features have been extracted, they are passed to a linear [[Support Vector Machine (SVM)]] to classify whether each region proposal contains an object and what class of object it is [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/).
