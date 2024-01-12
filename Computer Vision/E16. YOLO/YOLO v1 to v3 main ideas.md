@@ -5,6 +5,7 @@
 
 Как можно видеть на слайде, точность Yolo не такая хорошая, но зато скорость и время работы в разы выше, чем у аналогов. И то на сегодняшний день новые версии yolo по точности приблизились к аналогам. 
 
+
 ![[Pasted image 20240111032642.png]]
 
 Суть в том, что раньше модели были двухстадийные (R-CNN). YOLO является одностадийной моделью, то есть мы просто передаем картинку в нейронку и получаем результаты.
@@ -47,6 +48,8 @@ And finally we use Non Maximum Suppression to get the result.
 ### The  problem of YOLO
 
 Some boxes are overlapping
+
+The limitation of YOLO algorithm is that it struggles with small objects within the image, for example it might have difficulties in detecting a flock of birds
 
 ### Original Yolo
 

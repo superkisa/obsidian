@@ -1,3 +1,5 @@
+MobileNet is the same as ResNet but with optimised convolutions
+
 **MobileNetV1:** MobileNetV1 is designed for efficient image processing on mobile devices. It introduces depthwise separable convolutions and inverted residuals to reduce computational complexity, making it lightweight. It optimizes for model size and computational resources, striking a balance between efficiency and accuracy.
 
 **MobileNetV2:** Building upon MobileNetV1, MobileNetV2 enhances performance by introducing linear bottlenecks, skip connections, and width and resolution multipliers. It achieves improved accuracy while maintaining computational efficiency, making it well-suited for real-time applications on mobile and edge devices. The design includes smarter ways of processing information and utilizing shortcuts, resulting in a more efficient and effective convolutional neural network architecture.
