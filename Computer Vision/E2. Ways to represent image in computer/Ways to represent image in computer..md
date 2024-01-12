@@ -21,6 +21,8 @@ The choice of image representation depends on the specific computer vision task 
 
 [Color Spaces](https://medium.com/@livajorge7/the-science-of-color-understanding-color-spaces-in-image-processing-d0e238872a0c) (VPN)
 
+CIE 1931 xy [chromaticity diagram](https://en.wikipedia.org/wiki/Chromaticity_diagram "Chromaticity diagram") showing the [gamut](https://en.wikipedia.org/wiki/Gamut "Gamut") of the sRGB color space (the triangle). The outer curved boundary is the spectral (or monochromatic) locus, with wavelengths shown in nanometers (labeled in blue). This image is drawn using sRGB, so colors outside the triangle cannot be accurately colored and have been interpolated
+
 **RGB Colour Space**
 
 The RGB colour space is an additive colour model that is used to display colours on electronic displays, such as computer monitors and televisions. It uses three primary colors: red, green, and blue, to create all other colors. In the RGB color space, each color is represented by a combination of red, green, and blue values, ranging from 0 to 255.
