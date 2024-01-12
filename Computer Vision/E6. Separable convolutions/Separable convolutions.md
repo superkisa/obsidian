@@ -45,3 +45,4 @@ It is a linear layer over channels.
 
 [Источник](https://habr.com/ru/articles/347564/)
 ![[Pasted image 20240112191114.png]]
+![[Pasted image 20240112191330.png]]
