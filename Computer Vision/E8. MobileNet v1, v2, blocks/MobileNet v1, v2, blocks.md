@@ -46,4 +46,9 @@ MobileNetV1 and MobileNetV2 are two versions of lightweight convolutional neural
 
 Both MobileNetV1 and MobileNetV2 have been widely adopted for various computer vision tasks on mobile and edge devices, including image classification, object detection, and image segmentation. MobileNetV2, in particular, improves upon the original design and is often preferred for its enhanced performance.
 [Источник](https://habr.com/ru/articles/352804/)
+V1:
 ![[Pasted image 20240112211735.png]]
+V2:
+![[Pasted image 20240112212300.png]]
+![[Pasted image 20240112212355.png]]
+![[Pasted image 20240112212416.png]]
