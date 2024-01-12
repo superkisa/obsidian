@@ -4,7 +4,7 @@ The key distinction between VAEs and traditional autoencoders is the design of t
 
 In a standard autoencoder, every image corresponds to a singular point within the latent space. Conversely, as shown in **Figure 1**, in a variational autoencoder, each image is associated with a multivariate normal distribution centered around a specific point in the latent space.
 
-[![](https://lh5.googleusercontent.com/ZrB_cooYvAWJ25e4gprHyODxcJtVLIXQXcMbJQ19obGM2iZ9aEwNQ6Nv-xrGot5ITkTjmUf-GeHN-4AcX-V5c_MuYNAutiB5yW08_wujSH9JdQGvXbHKSPxcP_eD9MmDP7IV151f-abqmtJJTqFeyEs)](https://lh5.googleusercontent.com/ZrB_cooYvAWJ25e4gprHyODxcJtVLIXQXcMbJQ19obGM2iZ9aEwNQ6Nv-xrGot5ITkTjmUf-GeHN-4AcX-V5c_MuYNAutiB5yW08_wujSH9JdQGvXbHKSPxcP_eD9MmDP7IV151f-abqmtJJTqFeyEs)
+![[Pasted image 20240112134607.png]]
 
 VAEs are a type of autoencoder, designed to learn efficient input data codings or representations. However, unlike traditional autoencoders that learn deterministic encodings, VAEs introduce a probabilistic twist. The encoder in a VAE doesn’t produce a fixed point in the latent space. Instead, it outputs parameters (typically mean and variance) of a probability distribution, which we sample to obtain our latent representation.
 #### [**Comparison with Convolutional Autoencoder**](https://pyimagesearch.com/2023/10/02/a-deep-dive-into-variational-autoencoders-with-pytorch/#TOC-h4Comparison)
@@ -16,7 +16,7 @@ VAEs are a type of autoencoder, designed to learn efficient input data codings o
 - **Convolutional Autoencoder (CAE):** A CAE typically consists of an encoder and a decoder. The encoder uses convolutional layers to compress the input into a compact latent representation, and the decoder uses transposed convolutional layers to reconstruct the input from this representation.
 - **VAE:** Similar to a CAE, a VAE also has an encoder and a decoder. However, the encoder in a VAE produces parameters of a probability distribution (typically Gaussian) in the latent space rather than a deterministic point, as shown in **Figure 2**.
 
-[![](https://lh6.googleusercontent.com/dqHH81HNI-B60vDS3u2M0jsUVo0nsUIlMoRT4GlG4w8fDTfJ5-Li0vZ08XWtuEHLW2jFR4jlwxCz8O2WLTDX5u09uOp6WEE87XmStaspZgcBbHaRB47S3tdXdkf4TzIaZsDFh-YXLl945ebwzlWnJek)](https://lh6.googleusercontent.com/dqHH81HNI-B60vDS3u2M0jsUVo0nsUIlMoRT4GlG4w8fDTfJ5-Li0vZ08XWtuEHLW2jFR4jlwxCz8O2WLTDX5u09uOp6WEE87XmStaspZgcBbHaRB47S3tdXdkf4TzIaZsDFh-YXLl945ebwzlWnJek)
+![[Pasted image 20240112134700.png]]
 ##### [**Latent Space**](https://pyimagesearch.com/2023/10/02/a-deep-dive-into-variational-autoencoders-with-pytorch/#TOC-h5LatentSpace)
 
 - **CAE:** The latent space in a CAE is deterministic. Given the same input, the encoder will always produce the same point in the latent space.
@@ -72,3 +72,22 @@ VAEs optimize two primary loss functions:
 The combined VAE loss is a weighted sum of the reconstruction and KL divergence losses:
 
 ![\mathcal{L}_\text{VAE} = \mathcal{L}_\text{recon} + \mathcal{L}_\text{KL}](https://b2633864.smushcdn.com/2633864/wp-content/latex/331/3318c9bd2bc57d6b6777d1343bfaafb2-ffffff-000000-0.png?size=145x16&lossy=2&strip=1&webp=1 "\mathcal{L}_\text{VAE} = \mathcal{L}_\text{recon} + \mathcal{L}_\text{KL}")
+#### [**Reparameterization Trick**](https://pyimagesearch.com/2023/10/02/a-deep-dive-into-variational-autoencoders-with-pytorch/#TOC-h4Reparameterization)
+
+In the realm of Variational Autoencoder, one of the pivotal challenges is the integration of randomness in the latent space. This stochasticity, while essential for the VAE’s generative capabilities, poses a significant hurdle during training. Specifically, the sampling operation’s inherent randomness obstructs the smooth flow of gradients, making backpropagation infeasible.
+
+This is where the reparameterization trick comes into play. It helps avoid the problem by transforming the random node in the latent space into a deterministic counterpart. Doing so ensures that gradients can propagate seamlessly through the network (**Figure 3**), facilitating effective training. The essence of the trick lies in introducing an auxiliary random variable, typically drawn from a standard normal distribution.
+
+![[Pasted image 20240112134748.png]]
+
+**Figure 3:** The reparameterization trick transforms a stochastic node into a deterministic one, facilitating gradient flow (source: image designed by the author for the [LearnOpenCV Blog](https://learnopencv.com/wp-content/uploads/2020/11/reparam-vae-2048x959.jpg)).
+
+Mathematically, this can be represented as:
+
+![Z = Z_\mu + Z_\sigma^2 \odot \varepsilon](https://b2633864.smushcdn.com/2633864/wp-content/latex/52d/52d342b2d22e73d7f2204133a35cc40b-ffffff-000000-0.png?size=120x19&lossy=2&strip=1&webp=1 "Z = Z_\mu + Z_\sigma^2 \odot \varepsilon")
+
+Here, ![\varepsilon](https://b2633864.smushcdn.com/2633864/wp-content/latex/f8b/f8b1c5a729a09649c275fca88976d8dd-ffffff-000000-0.png?size=8x7&lossy=2&strip=1&webp=1 "\varepsilon") is sampled from a standard normal distribution, that is, ![\varepsilon \sim \mathcal{N}(0, 1)](https://b2633864.smushcdn.com/2633864/wp-content/latex/be3/be3f6fb4d31886a209ebafdc65802c1c-ffffff-000000-0.png?size=81x18&lossy=2&strip=1&webp=1 "\varepsilon \sim \mathcal{N}(0, 1)"). The symbol ![\odot](https://b2633864.smushcdn.com/2633864/wp-content/latex/319/319d584a4a5166ee6c51f4b8348856ea-ffffff-000000-0.png?size=11x12&lossy=2&strip=1&webp=1 "\odot") stands for element-wise multiplication.
+
+By adopting this approach, the VAE can harness the benefits of randomness in the latent space while still maintaining the tractability of training. This balance is crucial for the VAE’s dual objectives of accurate reconstructions and effective generation.
+
+Having delved deep into the theoretical underpinnings of VAE, it’s time to bring that knowledge to life. We’ll embark on a comprehensive code walkthrough in the next segment, demystifying each component step-by-step. Following that, we’ll dive into some exciting experiments, showcasing the prowess of our trained VAE in action.
