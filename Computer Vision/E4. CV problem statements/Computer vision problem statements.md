@@ -27,3 +27,20 @@
     - **Definition:** Instance segmentation is a more advanced form of segmentation that not only categorises each pixel but also distinguishes between different instances of the same class. It assigns a unique identifier to each individual object instance in an image.
     - **Example:** In an image with multiple cars, instance segmentation would not only label each pixel as "car" but also assign a unique label or colour to each individual car, effectively distinguishing between them.
     - **Applications:** Robotics, autonomous vehicles, and any scenario where precise identification and tracking of individual objects in an image are essential.
+
+- Classification
+![[Pasted image 20240107194300.png]]
+- Localization
+![[Pasted image 20240107194343.png]]
+- Detection
+![[Pasted image 20240107194516.png]]
+- Semantic Segmentation
+![[Pasted image 20240107194655.png]]
+- Instance Segmentation
+![[Pasted image 20240107195100.png]]
+- Image Generation
+![[Pasted image 20240107195454.png]]
+![[Pasted image 20240107195643.png]]
+- Adversarial Attacks
+![[Pasted image 20240107195802.png]]
+![[Pasted image 20240107200117.png]]
