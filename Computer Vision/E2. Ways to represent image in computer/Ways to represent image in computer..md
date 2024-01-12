@@ -21,6 +21,7 @@ The choice of image representation depends on the specific computer vision task 
 
 [Color Spaces](https://medium.com/@livajorge7/the-science-of-color-understanding-color-spaces-in-image-processing-d0e238872a0c) (VPN)
 
+![[Pasted image 20240112183045.png]]
 CIE 1931 xy [chromaticity diagram](https://en.wikipedia.org/wiki/Chromaticity_diagram "Chromaticity diagram") showing the [gamut](https://en.wikipedia.org/wiki/Gamut "Gamut") of the sRGB color space (the triangle). The outer curved boundary is the spectral (or monochromatic) locus, with wavelengths shown in nanometers (labeled in blue). This image is drawn using sRGB, so colors outside the triangle cannot be accurately colored and have been interpolated
 
 **RGB Colour Space**
