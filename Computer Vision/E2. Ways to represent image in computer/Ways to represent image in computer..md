@@ -7,13 +7,13 @@ There are several common techniques for image representation in computer vision:
 
 **Colour representation:** For colour images, the most common representation is the RGB (Red, Green, Blue) format. Each pixel is represented by three colour channels (R, G, and B), with each channel containing an intensity value ranging from 0 to 255.
 
-**Feature extraction:** Instead of using raw pixel values, computer vision algorithms often extract relevant features from images. These features can be edges, corners, textures, or more complex representations like histograms of oriented gradients (HOG) or deep features from convolutional neural networks (CNNs).
-
 **Histograms**: Image histograms represent the frequency distribution of pixel intensities in an image. They can provide valuable information about the image's contrast, brightness, and overall content.
 
 **Local descriptors:** These are representations that describe local regions of an image, such as SIFT (Scale-Invariant Feature Transform) and SURF (Speeded-Up Robust Features), which are used for object recognition and matching.
 
 **Global descriptors:** These representations describe the entire image and are often used for image classification tasks. Examples include bag-of-words models, histogram of gradients (HOG), and deep learning-based features like activations from pre-trained CNN models.
+
+**Feature extraction:** Instead of using raw pixel values, computer vision algorithms often extract relevant features from images. These features can be edges, corners, textures, or more complex representations like histograms of oriented gradients (HOG) or deep features from convolutional neural networks (CNNs).
 
 **Deep Learning-based Representations:** Convolutional neural networks (CNNs) have revolutionized image representation in recent years. CNNs automatically learn hierarchical representations from images, enabling them to capture complex patterns and features effectively.
 
@@ -24,6 +24,7 @@ The choice of image representation depends on the specific computer vision task 
 **RGB Colour Space**
 
 The RGB colour space is an additive colour model that is used to display colours on electronic displays, such as computer monitors and televisions. It uses three primary colors: red, green, and blue, to create all other colors. In the RGB color space, each color is represented by a combination of red, green, and blue values, ranging from 0 to 255.
+
 
  **CMYK Colour Space**
 
