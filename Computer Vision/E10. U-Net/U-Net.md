@@ -2,7 +2,7 @@
 https://paperswithcode.com/method/u-net
 U-Net - это модель, которая решает задачу сегментации
 
-![[Pasted image 20240111012950.png]]
+![[Pasted image 20240112214903.png]]
 ![[Pasted image 20240112214615.png]]
 The main difference between U-Net and other segmentation models is that this model provide feature map from every convolution stage to unconvolution stage.
 
