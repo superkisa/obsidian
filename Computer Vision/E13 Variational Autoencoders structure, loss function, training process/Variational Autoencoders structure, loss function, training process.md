@@ -91,3 +91,28 @@ Here, ![\varepsilon](https://b2633864.smushcdn.com/2633864/wp-content/latex/f8b
 By adopting this approach, the VAE can harness the benefits of randomness in the latent space while still maintaining the tractability of training. This balance is crucial for the VAE’s dual objectives of accurate reconstructions and effective generation.
 
 Having delved deep into the theoretical underpinnings of VAE, it’s time to bring that knowledge to life. We’ll embark on a comprehensive code walkthrough in the next segment, demystifying each component step-by-step. Following that, we’ll dive into some exciting experiments, showcasing the prowess of our trained VAE in action.
+
+------------------------------
+
+![[Pasted image 20240113011806.png]]
+
+![[Pasted image 20240113011815.png]]
+
+![[Pasted image 20240113011837.png]]
+
+Sampler берет и создает латентное пространство с помощью семплирования
+
+![[Pasted image 20240113011916.png]]
+
+![[Pasted image 20240113011933.png]]
+
+Мы хотим, чтобы все mu были равны 0
+
+![[Pasted image 20240113012005.png]]
+
+Почему взяли такой лосс?
+
+![[Pasted image 20240113012059.png]]
+
+![[Pasted image 20240113012142.png]]
+
