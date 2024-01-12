@@ -45,3 +45,5 @@ MobileNetV1 and MobileNetV2 are two versions of lightweight convolutional neural
     - MobileNetV2 introduces the notion of a width multiplier and a resolution multiplier. The width multiplier adjusts the number of channels in each layer, providing a trade-off between accuracy and computational cost. The resolution multiplier scales down the input image resolution, further reducing computation.
 
 Both MobileNetV1 and MobileNetV2 have been widely adopted for various computer vision tasks on mobile and edge devices, including image classification, object detection, and image segmentation. MobileNetV2, in particular, improves upon the original design and is often preferred for its enhanced performance.
+[Источник](https://habr.com/ru/articles/352804/)
+![[Pasted image 20240112211735.png]]
