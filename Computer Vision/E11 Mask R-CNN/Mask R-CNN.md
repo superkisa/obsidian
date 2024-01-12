@@ -1,5 +1,5 @@
-Ссылки[https://www.youtube.com/watch?v=4tkgOzQ9yyo
-https://habr.com/ru/articles/421299/]
+[Mask Region based Convolution Neural Networks - EXPLAINED!](https://www.youtube.com/watch?v=4tkgOzQ9yyo)
+[Mask R-CNN: архитектура современной нейронной сети для сегментации объектов на изображениях](https://habr.com/ru/articles/421299/)
 ![[Pasted image 20240110143208.png]]
 Решает проблему мгновенной сегментации: выделение каждого объекта, который представляет важное значение.
 Мгновенная сегментация разделена на 2 подзадачи:
