@@ -70,3 +70,27 @@ It is important to note that, even though IoU and DSC are both commonly used in 
 Суть в том, что при CE мы пытаемся просто хорошо классифицировать объекты, из-за чего пытаемся даже улучшать объекты, которые показывают 80%, 90%, чтобы устремить к 100%. Это видно на графике
 
 А если посмотрите на Focal Loss, то тут ситуация интереснее. Допустим при gamma = 5 наша модель уже не будет штрафовать или как-то реагировать на прогнозы с 60% вероятностью! То есть благодаря данному лоссу, мы можем сфокусировать модель именно на низких вероятностях при верности ответа.
+
+The main idea behind focal loss is to assign different weights to different examples during the training process. It aims to give more emphasis to hard, misclassified examples (those with a low probability of being correctly classified) and less emphasis to well-classified examples. This helps the model focus more on challenging instances and improve its ability to handle imbalanced datasets.
+
+Here are the key concepts of focal loss:
+
+1. **Modulation of Loss Weights:**
+    
+    - The focal loss introduces a modulating factor for each training example, which adjusts the loss contribution based on the predicted probability of the true class. The formula for focal loss is:
+        
+        $FL(p_t)=−(1−p_t)^{\gamma}⋅log⁡(p_t)$
+        
+        where $p_t$​ is the predicted probability of the true class, and γ is a user-defined focusing parameter. The term $(1−p_t)^γ$ modulates the loss based on the predicted probability, giving higher weight to misclassified examples.
+        
+2. **Handling Class Imbalance:**
+    
+    - The focal loss is particularly effective in handling class imbalance, as it down-weights the easy-to-classify examples and up-weights the hard-to-classify examples. This is crucial in tasks like object detection, where the number of background regions is much larger than the number of object regions.
+3. **Improved Learning for Rare Classes:**
+    
+    - Focal loss improves the model's ability to learn from rare or minority classes by assigning higher importance to challenging examples. This is beneficial in scenarios where certain classes occur less frequently in the dataset.
+4. **Adjustable Focusing Parameter:**
+    
+    - The parameter γ is adjustable and allows users to control the level of emphasis given to hard examples. A higher γ puts more focus on misclassified examples.
+
+In summary, the focal loss is designed to address the challenges posed by imbalanced datasets in object detection tasks by assigning varying weights to training examples based on their predicted probabilities. It has proven effective in improving the performance of models on tasks with imbalanced class distributions.
