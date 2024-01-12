@@ -2,37 +2,31 @@
 
 [Artical about these three](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/)
 
-Firstly, we should understand, that this models solve detection task in CV.
-Generally, Detection task is
-![[Pasted image 20240110003527.png]]
-So, here we get image as an input and give an output of form [class label, confidence, BoundingBox]
-
-There are two object Detection Challenges:
-![[Pasted image 20240110004105.png]]
-
-Let's try to create detection model from scratch:
-Firstly, let's assume, that we have just one object in the image to detect. What can we do?
-
-We can create simple CNN Network, which will be predict labels and Bounding Boxes for object. And then we can combine this losses (Softmax Loss and L2) to optimize weights of our model.
-
-![[Pasted image 20240110012247.png]]
-
-Ok. But what, if we will have more than one object in our image?
-Here, we can create windows to slice through the image. And for every window we can use the model, which we consider above to predict labels and bboxes.
-
-![[Pasted image 20240110012632.png]]
-
-Here is another problem - we have different objects with different sizes. How to choose correct windows, because we can't choose all possible ones, as they are infinite. How to choose those windows?
-
-![[Pasted image 20240110012843.png]]
-
-![[Pasted image 20240110012853.png]]
-
-There are many different approaches, how to choose windows for detection
-
-![[Pasted image 20240110013057.png]]
-
-But the most popular one is Selective Search. We will not go into details about this approach, let's just think, that we can somehow choose optimal windows
+Enter slides
+	Firstly, we should understand, that this models solve detection task in CV.
+	Generally, Detection task is
+	![[Pasted image 20240110003527.png]]
+	So, here we get image as an input and give an output of form [class label, confidence, BoundingBox]
+	There are two object Detection Challenges:
+	![[Pasted image 20240110004105.png]]
+	Let's try to create detection model from scratch:
+	Firstly, let's assume, that we have just one object in the image to detect. What can we do?
+	We can create simple CNN Network, which will be predict labels and Bounding Boxes for object. And then we can combine this losses (Softmax Loss and L2) to optimize weights of our model.
+	
+	![[Pasted image 20240110012247.png]]
+	Ok. But what, if we will have more than one object in our image?
+	Here, we can create windows to slice through the image. And for every window we can use the model, which we consider above to predict labels and bboxes.
+	
+	![[Pasted image 20240110012632.png]]
+	Here is another problem - we have different objects with different sizes. How to choose correct windows, because we can't choose all possible ones, as they are infinite. How to choose those windows?
+	
+	![[Pasted image 20240110012843.png]]
+	
+	![[Pasted image 20240110012853.png]]
+	There are many different approaches, how to choose windows for detection
+	
+	![[Pasted image 20240110013057.png]]
+	But the most popular one is Selective Search. We will not go into details about this approach, let's just think, that we can somehow choose optimal windows
 
 #### R-CNN
 
@@ -107,7 +101,7 @@ Presentation
 
 Some additional info
 	Faster R-CNN is an extension of Fast R-CNN that further improves its speed and performance. It incorporates a Region Proposal Network (RPN) directly into the network architecture, eliminating the need for a separate region proposal stage. Here's a detailed explanation of how Faster R-CNN works:
-	1. **Region Proposals**: Unlike R-CNN and Fast R-CNN, which rely on external methods like selective search to generate region proposals, Faster R-CNN includes a built-in RPN that generates region proposals directly within the network. The RPN uses anchor boxes to propose potential object locations in the image [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
+	1. **Region Proposals**: Unlike R-CNN and Fast R-CNN, which rely on external methods like selective search to generate region proposals, Faster R-CNN includes a built-in [[RPN]] that generates region proposals directly within the network. The RPN uses anchor boxes to propose potential object locations in the image [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
 	2. **Shared Convolutional Layers**: Similar to Fast R-CNN, Faster R-CNN also shares the convolutional layers between the RPN and the rest of the network. This allows the network to share computations across all region proposals, significantly increasing efficiency [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
 	3. **ROI Pooling**: After the convolutional layers, Faster R-CNN introduces a new layer called Region of Interest (ROI) Pooling. This layer extracts fixed-size feature vectors from each proposed region. It splits each region proposal into a grid of cells, applies max pooling to each cell, and concatenates all values to form a feature vector for that region proposal [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
 	4. **Classification and Bounding Box Regression**: The ROI Pooling layer feeds the pooled feature vectors into fully connected layers for classification and bounding box regression. The classification layer assigns each region proposal to a class, while the regression layer refines the bounding box coordinates of each region proposal [1](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/amp/).
