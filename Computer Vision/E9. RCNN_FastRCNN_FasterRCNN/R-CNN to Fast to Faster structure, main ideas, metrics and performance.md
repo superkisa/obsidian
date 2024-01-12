@@ -43,7 +43,7 @@ Some additional info
 	Despite its effectiveness, R-CNN has some limitations. Because it uses selective search to generate region proposals, the quality of these proposals can vary, leading to poor object detection. Additionally, R-CNN is computationally expensive due to the large number of region proposals and the need to run the entire CNN on each one. These drawbacks led to the development of faster and more efficient versions of R-CNN, such as Fast R-CNN and Faster R-CNN [1](https://www.geeksforgeeks.org/r-cnn-region-based-cnns/amp/), [2](https://blog.roboflow.com/what-is-r-cnn/amp/).
 		![[Pasted image 20240112145045.png]]
 
-Presemtation
+Presentation
 	![[Pasted image 20240110131646.png]]
 	But there is some question: how to solve bbox regression? There is a problem, because predifined bbox can be not similiar to the ground true bbox.
 	We can predict not  coordinates of bboxes, but transformation.
@@ -70,26 +70,34 @@ Presemtation
 	You can see that it has bad performance, it's very slow model, because of the first point above
 
 ## Fast R-CNN
-![[Pasted image 20240110140403.png]]
-Our feature map contains the special structure, so we don't loose information about location of our features and objects.
 
-![[Pasted image 20240110142230.png]]
+Some additional info
+	Fast R-CNN is an improvement over the original R-CNN model that addresses several of its limitations, including computational efficiency and the handling of multiple objects in an image. Here's how Fast R-CNN works:
+	1. **Region Proposals**: Like R-CNN, Fast R-CNN starts with region proposals. These proposals are generated using a method like selective search, which segments the image into smaller regions and proposes regions that likely contain an object [2](https://paperswithcode.com/method/fast-r-cnn).
+	2. **Shared Convolutional Layers**: Unlike R-CNN, which performs feature extraction for each region proposal independently, Fast R-CNN applies the convolutional layers to the entire image only once. This allows it to share computations across all region proposals, which significantly speeds up the process [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
+	3. **ROI Pooling**: After the convolutional layers, Fast R-CNN introduces a new layer called Region of Interest (ROI) Pooling. This layer extracts fixed-size feature vectors from each region proposal. It splits each region proposal into a grid of cells, applies max pooling to each cell, and concatenates all values to form a feature vector for that region proposal [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
+	4. **Classification and Bounding Box Regression**: The ROI Pooling layer feeds the pooled feature vectors into fully connected layers for classification and bounding box regression. The classification layer assigns each region proposal to a class, while the regression layer refines the bounding box coordinates of each region proposal [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
+	One limitation of Fast R-CNN is that it still relies on the time-consuming Selective Search algorithm for generating region proposals. Another downside is that while Fast R-CNN shares computations across multiple proposals, it does not cache the extracted features, which could lead to increased memory usage [3](https://blog.paperspace.com/faster-r-cnn-explained-object-detection/).
 
-![[Pasted image 20240110170410.png]]
-
-![[Pasted image 20240110170424.png]]
-
-![[Pasted image 20240110170459.png]]
-
-![[Pasted image 20240110170522.png]]
-
-![[Pasted image 20240110170536.png]]
-
-And as a result, this approach perform much better than R-CNN
-
-![[Pasted image 20240110170629.png]]
-
-The one thing that is not differentiable in Fast R-CNN is region proposal method. And it takes many time. It will be changed in the next model
+Presentation
+	![[Pasted image 20240110140403.png]]
+	Our feature map contains the special structure, so we don't loose information about location of our features and objects.
+	
+	![[Pasted image 20240110142230.png]]
+	
+	![[Pasted image 20240110170410.png]]
+	
+	![[Pasted image 20240110170424.png]]
+	
+	![[Pasted image 20240110170459.png]]
+	
+	![[Pasted image 20240110170522.png]]
+	
+	![[Pasted image 20240110170536.png]]
+	And as a result, this approach perform much better than R-CNN
+	
+	![[Pasted image 20240110170629.png]]
+	The one thing that is not differentiable in Fast R-CNN is region proposal method. And it takes many time. It will be changed in the next model
 
 ## Faster R-CNN
 
