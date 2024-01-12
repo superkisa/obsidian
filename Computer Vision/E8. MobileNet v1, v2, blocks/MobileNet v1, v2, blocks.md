@@ -24,7 +24,8 @@ MobileNetV1 and MobileNetV2 are two versions of lightweight convolutional neural
 2. ==**Inverted Residuals:**==
     
     - ==MobileNetV1 also introduces the concept of inverted residuals, where the input is first expanded to a higher-dimensional space, processed with depthwise separable convolutions, and then projected back to a lower-dimensional space. This design helps capture more complex features while maintaining efficiency.==
-3. **Parameter Efficiency:**
+    чет какая-то лажа
+1. **Parameter Efficiency:**
     
     - MobileNetV1 is designed to be parameter-efficient, making it suitable for mobile and edge devices with limited memory and processing power. It achieves a good trade-off between model size and accuracy.
 
