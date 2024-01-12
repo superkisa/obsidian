@@ -7,6 +7,7 @@ MobileNet is the same as ResNet but with optimised convolutions
 ![[Pasted image 20240111182944.png]]
 
 Watch Separable Convolutions to understand better DepthWise Conv and 1x1 Conv.
+Сеть работает быстрее, за счет меньшего количества параметров и вычислений. Дает те же результаты, что и полноценная сверточная VGG (которая в разы сложнее по количеству параметров и вычислений). Также слои свертки разделенные на dw и pw менее склонны к переобучению, на ограниченном количестве данных. 
 
 It achieves the same results as VGG
 
