@@ -35,3 +35,6 @@ Transpose convolution is a technique used for upsampling or increasing the resol
 
 In summary, transpose convolution is a technique used in neural networks for increasing the resolution of feature maps. It involves a learnable operation that spreads and refines information to produce a higher-resolution output. This is particularly useful in tasks such as image generation, where the network needs to generate detailed and realistic images.
 
+[Source](https://towardsdatascience.com/what-is-transposed-convolutional-layer-40e5e6e31c11) (VPN)
+![[Pasted image 20240112195612.png]]
+![[Pasted image 20240112195741.png]]
