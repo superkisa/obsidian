@@ -133,3 +133,7 @@ https://neptune.ai/blog/gan-loss-functions#:~:text=The%20standard%20GAN%20loss%2
 
 ![[Pasted image 20240113114329.png]]
 
+![[Pasted image 20240113114913.png]]
+
+![[Pasted image 20240113115008.png]]
+
