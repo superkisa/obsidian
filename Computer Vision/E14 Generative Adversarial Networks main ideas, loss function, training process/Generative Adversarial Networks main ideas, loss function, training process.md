@@ -71,3 +71,9 @@ https://neptune.ai/blog/gan-loss-functions#:~:text=The%20standard%20GAN%20loss%2
 -------------------------------------------
 ![[Pasted image 20240113110950.png]]
 
+До этого был VAE
+
+![[Pasted image 20240113111344.png]]
+
+![[Pasted image 20240113111352.png]]
+
