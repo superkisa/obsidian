@@ -1,6 +1,14 @@
 [Ссылка](https://habr.com/ru/articles/484756/)
 https://encord.com/blog/kl-divergence-in-machine-learning/
 Kullback-Leibler (KL) divergence, or relative entropy, is a metric used to compare two data distributions. It is a concept of information theory that contrasts the information contained in two probability distributions. It has various practical use cases in data science, including assessing dataset and model drift, information retrieval for generative models, and reinforcement learning.
+
+## KL Divergence: Key Takeaways
+
+- Divergence is a measure that provides the statistical distance between two distributions.
+- KL divergence is an asymmetric divergence metric defined as the number of bits required to convert one distribution into another.
+- A zero KL divergence score means that the two distributions are exactly the same. A higher score defines how different the two distributions are.
+- KL divergence is used in [artificial intelligence](https://encord.com/glossary/artificial-intelligence-definition/) as a loss function to compare the predicted data with true values.
+- Some other AI applications include generative adversarial networks (GANs) and data model drifting.
 ## Divergence in Statistics
 
 The divergence between two probability distributions quantifies how much the two differ from each other.
@@ -23,7 +31,7 @@ This article is focused on the KL divergence, so let’s visit the mathematics b
 
 KL divergence is an asymmetric divergence metric. Asymmetric means that given a probability distribution P and a probability distribution Q, the divergence between P and Q will not be the same as Q and P.
 
-KL divergence is defined as the number of bits required to convert one distribution into another. The lower bound value is zero and is achieved when the distributions under observation are identical.
+KL divergence is defined as the **number of bits required to convert one distribution into another**. The lower bound value is zero and is achieved when the distributions under observation are identical.
 
 It is often denoted with the following notation:
 
@@ -78,7 +86,7 @@ When using KL divergence as the loss, the network optimizes to bring the diverge
 
 ### Variational Auto-Encoder Optimization
 
-An auto-encoder is a neural network architecture that encodes an input image onto an embedding layer. [Variational auto-encoders](https://arxiv.org/abs/1312.6114v10) (VAEs) are a specialized form of traditional architecture that project the input data onto a probability distribution (usually a Gaussian distribution).
+An auto-encoder is a neural network architecture that encodes an input image onto an embedding layer. [Variational auto-encoders](https://arxiv.org/abs/1312.6114v10) (VAEs) are a specialized form of traditional architecture that projects the input data onto a probability distribution (usually a Gaussian distribution).
 
 ![Variational Autoencoders](https://images.prismic.io/encord/4540086f-3fcd-4294-83d7-d758178bc2bb_image10.png?auto=compress,format)
 
