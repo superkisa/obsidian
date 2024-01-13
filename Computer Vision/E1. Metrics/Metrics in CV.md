@@ -60,6 +60,13 @@ Furthermore, the authors of YOLO v3 paper suggest that the mAP metric ==can be o
 
 Due to these limitations, the authors of YOLO v3 propose to use an alternative detection metric, called **"mean average precision across scales" (ms-AP)**, which takes into account the scale of the object and the confidence score of the predictions, which they found to better capture the performance of object detectors. 
 
+### Importance of mAP:
+
+- mAP provides a holistic measure of a model's performance, considering both precision and recall.
+- It helps assess how well a model generalizes to different classes and different levels of difficulty.
+
+In summary, mAP is a versatile metric in computer vision, providing a comprehensive evaluation of models for tasks like object detection and instance segmentation. Its use is prevalent in research, competitions, and benchmarking in the computer vision community.
+
 #### Dice Similarity Coefficient (DSC) 
 DSC - a measure of the similarity between the predicted segmentation and the ground truth segmentation. It is usually calculated between two binary masks, the predicted mask and the ground truth mask:  
 
