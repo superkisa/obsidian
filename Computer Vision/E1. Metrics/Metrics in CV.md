@@ -28,7 +28,7 @@ certain factor.),
 ![[Pasted image 20240113133601.png]]
 ## mAP
 
-mAP (Mean Average Precision) - a commonly used metric for evaluating the performance of object detection models. 
+ - a commonly used metric for evaluating the performance of object detection models. 
 
 The mAP value is calculated the following way: 
 - we firstly draw a bounding box around each object in an image 
