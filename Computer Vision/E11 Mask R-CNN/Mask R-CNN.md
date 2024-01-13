@@ -50,3 +50,6 @@ Rol Pooling не позволяет охватить всю область, чт
 P.S. Прикрепляю годную презентацию
 ![[06_SemanticSegmentation_Rus_pptx.pdf]]
 Браво!)
+
+![[Pasted image 20240113112650.png]]
+Это просто для CNN.
