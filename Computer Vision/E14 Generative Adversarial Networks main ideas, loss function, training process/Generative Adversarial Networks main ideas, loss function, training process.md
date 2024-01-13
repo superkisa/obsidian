@@ -69,6 +69,9 @@ Combining NLP and computer vision has become a popular research area in recent y
 https://neptune.ai/blog/gan-loss-functions#:~:text=The%20standard%20GAN%20loss%20function%2C,of%20the%20loss%20seemed%20effective
 
 -------------------------------------------
+
+https://www.youtube.com/watch?v=An20DOEOctc&list=PL0Ks75aof3Tiru-UvOvYmXzD1tU0NrR8V&index=62
+
 ![[Pasted image 20240113110950.png]]
 
 До этого был VAE
