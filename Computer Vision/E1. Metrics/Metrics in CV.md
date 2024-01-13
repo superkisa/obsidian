@@ -25,6 +25,7 @@ bounding box but inside an expanded bounding box that is larger than the ground 
 certain factor.),  
 *IoU* is the standard intersection over union  
 *Union(Bbox,Context)* is the union between *Bbox* and *Context*.
+![[Pasted image 20240113133601.png]]
 ## mAP
 
 mAP (Mean Average Precision) - a commonly used metric for evaluating the performance of object detection models. 
