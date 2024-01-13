@@ -27,7 +27,7 @@ certain factor.),
 *Union(Bbox,Context)* is the union between *Bbox* and *Context*.
 ![[Pasted image 20240113133601.png]]
 ## mAP
-
+https://learnopencv.com/mean-average-precision-map-object-detection-model-evaluation-metric/#What-is-Mean-Average-Precision-(mAP)?
  - a commonly used metric for evaluating the performance of object detection models. 
 
 The mAP value is calculated the following way: 
