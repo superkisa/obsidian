@@ -1,3 +1,3 @@
 **Corpus** - a set of all texts available at the training stage
-Token - 
-**Tokenisation** - extracting tokens from corpus of texts
+**Token** - элементарная единица текста, которую модель рассматривает в процессе обработки. Токены могут представлять собой отдельные слова, подслова (например, n-граммы или морфемы), символы или другие лингвистические элементы, в зависимости от выбранного уровня разбиения текста. 
+**[Tokenization](https://huggingface.co/docs/transformers/tokenizer_summary)** - extracting tokens from corpus of texts
