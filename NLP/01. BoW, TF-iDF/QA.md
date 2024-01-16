@@ -11,14 +11,19 @@
 
 - **Answer:** The BoW model ignores word order, context, and semantics. It treats each document as an unordered set of words, which may lead to a loss of information, especially in tasks where word order and context are crucial.
 
-**2. Question: Discuss the trade-off between granularity and information loss in the Bag of Words model. Provide examples illustrating this trade-off.**
+**4. Question: Discuss the trade-off between granularity and information loss in the Bag of Words model. Provide examples illustrating this trade-off.**
 
 - **Answer:** The trade-off involves choosing the granularity of representation. Finer granularity captures more details but might lead to sparsity and overfitting. Coarser granularity reduces sparsity but results in information loss. For example, distinguishing between "run" and "running" captures details but increases sparsity.
 
-**3. Question: Can the Bag of Words model handle out-of-vocabulary words effectively? Explain the challenges associated with out-of-vocabulary words in BoW representations.**
+**4. Question: Can the Bag of Words model handle out-of-vocabulary words effectively? Explain the challenges associated with out-of-vocabulary words in BoW representations.**
 
 - **Answer:** BoW struggles with out-of-vocabulary words as they are not part of the predefined vocabulary. These words are either ignored or treated as unknown, leading to a loss of information. The challenge lies in adapting the model to handle new or rare words not present in the training set.
 
+**5. Question: How to improve BoW?
+- Answer: Use n-gramms instead of words
+	- preserves more information
+	- but vocabulary size will increase
+	- =>can only keep meaningful n-gramms (collocations)
 ### TF-IDF:
 
 **4. Question: What does TF-IDF stand for, and how is it calculated?**
