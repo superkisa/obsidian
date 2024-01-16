@@ -11,6 +11,14 @@
 
 - **Answer:** The BoW model ignores word order, context, and semantics. It treats each document as an unordered set of words, which may lead to a loss of information, especially in tasks where word order and context are crucial.
 
+**2. Question: Discuss the trade-off between granularity and information loss in the Bag of Words model. Provide examples illustrating this trade-off.**
+
+- **Answer:** The trade-off involves choosing the granularity of representation. Finer granularity captures more details but might lead to sparsity and overfitting. Coarser granularity reduces sparsity but results in information loss. For example, distinguishing between "run" and "running" captures details but increases sparsity.
+
+**3. Question: Can the Bag of Words model handle out-of-vocabulary words effectively? Explain the challenges associated with out-of-vocabulary words in BoW representations.**
+
+- **Answer:** BoW struggles with out-of-vocabulary words as they are not part of the predefined vocabulary. These words are either ignored or treated as unknown, leading to a loss of information. The challenge lies in adapting the model to handle new or rare words not present in the training set.
+
 ### TF-IDF:
 
 **4. Question: What does TF-IDF stand for, and how is it calculated?**
@@ -28,6 +36,18 @@
 **7. Question: In what type of NLP tasks is TF-IDF commonly applied?**
 
 - **Answer:** TF-IDF is commonly applied in tasks such as document classification, information retrieval, and text mining, where understanding the importance of words in documents is crucial.
+
+**4. Question: Discuss the impact of document length on TF-IDF scores. How does document length normalization mitigate this impact, and what are its limitations?**
+
+- **Answer:** Longer documents tend to have higher raw term frequencies, leading to higher TF-IDF scores. Document length normalization, such as dividing by the total number of words, mitigates this impact. However, it may not completely eliminate the bias, especially if document lengths vary significantly in the corpus.
+
+**5. Question: In what scenarios might TF-IDF fail to capture the relevance of a term in a document? Provide examples and explain the limitations of TF-IDF in these cases.**
+
+- **Answer:** TF-IDF may fail when terms have high frequency across the corpus or when they are present in short documents. For example, common words like "the" may get high scores. Additionally, TF-IDF may overlook the semantic similarity of terms, affecting its performance in capturing relevance.
+
+**6. Question: How can the concept of term weighting be extended beyond TF-IDF for improved information retrieval? Provide alternatives and explain their advantages and disadvantages.**
+
+- **Answer:** Alternatives include BM25, which adjusts for document length, and Okapi BM, which combines term frequency and document frequency. These models adapt term weighting for better information retrieval, considering factors like document length and term saturation. Each has its strengths and weaknesses, depending on the specific requirements.
 
 **1. Вопрос: Что такое модель Bag of Words (BoW), и как она представляет текст?**
 
