@@ -24,6 +24,9 @@
 	- preserves more information
 	- but vocabulary size will increase
 	- =>can only keep meaningful n-gramms (collocations)
+
+**6. When do we use BoW?**
+- The Bag of Words (BoW) model is used in scenarios where the order of words is not important, and only the occurrence and frequency of words matter. Common applications include text classification (spam, sentiment, categorization), information retrieval, document clustering, keyword extraction, topic modeling, text summarization, spell checking, and named entity recognition. BoW simplifies text into a vector of word frequencies, making it useful for various text analysis tasks.
 ### TF-IDF:
 
 **4. Question: What does TF-IDF stand for, and how is it calculated?**
