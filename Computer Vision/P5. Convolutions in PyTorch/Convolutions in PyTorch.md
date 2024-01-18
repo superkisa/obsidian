@@ -2,6 +2,8 @@
 
 Лажовый [вебинар](https://youtu.be/K2QVHTaAmPc?si=tAXwRJ7JFgy5On-U) от Марата про реализацию сверточных слоев в нумпае и пайторче
 
+[Офигительная визуализация слоев в CNN](https://poloclub.github.io/cnn-explainer/)
+
 #### Convolution NN
 ![[convolution-operation-on-a-mxnx3-image-matrix-with-a-3x3x3-kernel.gif]]
 
