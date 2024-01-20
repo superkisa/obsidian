@@ -34,6 +34,8 @@
 
 **1) Markov Decision Process (MDP) and its Properties:**
 
+![[Pasted image 20240120225520.png]]
+
 A Markov Decision Process is a mathematical framework that formalises the RL problem. It consists of:
 
 1. **State Space (S):**
