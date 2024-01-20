@@ -7,12 +7,11 @@ decision process and its properties. Reward, discounted reward.
 - What is the difference between model-based and model-free RL?  
 - Value-based vs. Policy based methods (general idea)  
 Program:  
-1. Cross-entropy method (tabular and approximate case).  
-2. Value-based RL: state value and state-action value functions. Relationship  
-between them. Bellman expectation and optimality equations.  
-3. Value iteration algorithm.  
-4. Policy iteration algorithm.  
-5. Model-free RL: Monte-Carlo vs. TD updates. Q-Learning algorithm.  
+1. [[Cross-entropy method (tabular and approximate case)]].  
+2. [[Value-based RL state value and state-action value functions. Relationship between them. Bellman expectation and optimality equations.]]
+3. [[Value iteration algorithm.]]  
+4. [[Policy iteration algorithm]].  
+5. [[Model-free RL Monte-Carlo vs. TD updates. Q-Learning algorithm]].  
 6. SARSA, Expected-Value SARSA algorithms. On-policy vs. Off-policy  
 methods.  
 7. Approximate Q-Learning. DQN, training details.  
