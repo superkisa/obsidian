@@ -32,7 +32,7 @@
    - Estimates the expected cumulative reward for a given state (V) or state-action pair (Q).
    - Helps evaluate the desirability of different states or actions.
 
-**Markov Decision Process (MDP) and its Properties:**
+**1) Markov Decision Process (MDP) and its Properties:**
 
 A Markov Decision Process is a mathematical framework that formalises the RL problem. It consists of:
 
