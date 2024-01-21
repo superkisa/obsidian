@@ -110,3 +110,9 @@ This relationship helps in understanding that the Q-function provides a more det
 - What is an exploration-exploitation tradeoff?  
 - What is the difference between model-based and model-free RL?  
 - Value-based vs. Policy based methods (general idea) 
+
+
+**6. What is the difference between model-based and model-free RL?**
+
+В model-based мы вкурсе, о всех состояниях и знаем, с какой вероятностью мы перейдем в то или иное состояние, если совершим действие. А в model-free случае все сложнее, там мы этого не знаем.\
+
