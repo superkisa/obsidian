@@ -72,7 +72,7 @@ Here, \( \gamma \) is the discount factor (0 ≤ \( \gamma \) < 1). It reflects 
 ![[Pasted image 20240121111658.png]]
 
 
-<b>What is a Q-function and a Value-function? Relationship between them.  </b>
+ **3) What is a Q-function and a Value-function? Relationship between them.  **
 
 In reinforcement learning (RL), the Q-function (also known as the action-value function) and the value function are essential concepts used to estimate the expected cumulative rewards associated with taking certain actions in a given state. The relationship between these two functions lies in how they quantify the desirability of states and state-action pairs.
 
