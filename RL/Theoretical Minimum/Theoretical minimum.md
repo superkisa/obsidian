@@ -65,6 +65,8 @@ $$ G_t = R_{t+1} + \gamma \cdot R_{t+2} + \gamma^2 \cdot R_{t+3} + \ldots = \sum
 
 Here, \( \gamma \) is the discount factor (0 ≤ \( \gamma \) < 1). It reflects the agent's preference for immediate rewards over delayed rewards. Introducing discounting ensures that the sum of rewards converges and the agent prioritises short-term gains while still considering long-term consequences.
 
+![[Pasted image 20240121110901.png]]
+
 <b>What is a Q-function and a Value-function? Relationship between them.  </b>
 
 In reinforcement learning (RL), the Q-function (also known as the action-value function) and the value function are essential concepts used to estimate the expected cumulative rewards associated with taking certain actions in a given state. The relationship between these two functions lies in how they quantify the desirability of states and state-action pairs.
