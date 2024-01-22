@@ -18,7 +18,7 @@
 
 4. **Action (A):**
    - Decisions or moves that the agent can take in a given state.
-   - The action space is the set of all possible actions.
+   - The action space is a set of all possible actions.
 
 5. **Reward (R):**
    - A numerical signal provided by the environment after an action is taken in a certain state.
