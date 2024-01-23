@@ -51,7 +51,7 @@ A Markov Decision Process is a mathematical framework that formalises the RL pro
 
 4. **Reward Function (R):**
    - Defines the immediate reward received after taking a certain action in a certain state.
-   - \( R(s, a, s') \) is the reward obtained after transitioning from state \( s \) to \( s' \) by taking action \( a \).
+   - $R(s, a, s')$  is the reward obtained after transitioning from state \( s \) to \( s' \) by taking action \( a \).
 
 5. **Policy (π):**
    - A strategy that the agent follows to select actions in different states.
