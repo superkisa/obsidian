@@ -63,7 +63,7 @@ In many RL formulations, the concept of discounted rewards is introduced. The di
 
 $$ G_t = R_{t+1} + \gamma \cdot R_{t+2} + \gamma^2 \cdot R_{t+3} + \ldots = \sum_{k=0}^{\infty} \gamma^k \cdot R_{t+k+1} $$
 
-Here, \( \gamma \) is the discount factor (0 ≤ \( \gamma \) < 1). It reflects the agent's preference for immediate rewards over delayed rewards. Introducing discounting ensures that the sum of rewards converges and the agent prioritises short-term gains while still considering long-term consequences.
+Here, $\gamma$ is the discount factor (0 ≤ $\gamma$ < 1). It reflects the agent's preference for immediate rewards over delayed rewards. Introducing discounting ensures that the sum of rewards converges and the agent prioritises short-term gains while still considering long-term consequences.
 
 ![[Pasted image 20240121110901.png]]
 
