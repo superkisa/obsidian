@@ -45,7 +45,7 @@ A Markov Decision Process is a mathematical framework that formalises the RL pro
 2. **Action Space (A):**
    - A set of all possible actions that the agent can take.
 
-3. **Transition Probability Function (P):**
+3. **Transition Probability Function (P):** функция перехода
    - Defines the probability of transitioning from one state to another given a specific action.
    $$ P(s', a, s) = \text{Pr}(S_{t+1} = s' | S_t = s, A_t = a) $$
 
@@ -105,10 +105,9 @@ This relationship helps in understanding that the Q-function provides a more det
 
 <b>How can RL be applied to NLP or CV tasks?  </b>
 
-...
+смотри отдельную страничку
 
 - What is an exploration-exploitation tradeoff?  
-- What is the difference between model-based and model-free RL?  
 - Value-based vs. Policy based methods (general idea) 
 
 
