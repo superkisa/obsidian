@@ -59,6 +59,8 @@ The mAP value is calculated the following way:
 
 **How mAP is different from precision?** 
 It is different from a simple precision in a way that, average precision gives overall performance of model for all recalls and precisions, whereas precision is only one number representing model performance at a particular recall point. 
+
+Она отличается от простой точности тем, что средняя точность дает общую производительность модели для всех отзывов и уточнений, тогда как точность - это всего лишь одно число, представляющее производительность модели в определенный момент отзыва.
 ![[Pasted image 20240112184421.png]]
 ![[Pasted image 20240112184509.png]]
 ![[Pasted image 20240112184524.png]]
