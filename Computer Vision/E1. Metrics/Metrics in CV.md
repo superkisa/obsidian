@@ -33,6 +33,10 @@ https://learnopencv.com/mean-average-precision-map-object-detection-model-evalua
 The mAP value is calculated the following way: 
 - we firstly draw a bounding box around each object in an image 
 - then comparing the predicted bounding box from the model with the ground truth bounding box. For each predicted bounding box, a "hit" is recorded if the predicted box overlaps with the ground truth box by a certain amount (usually defined as a threshold, such as an IoU of 0.5) 
+Значение  mAP вычисляется следующим образом:
+- сначала мы рисуем ограничивающую рамку вокруг каждого объекта на изображении
+- затем сравниваем предсказанную ограничивающую рамку из модели с реальной ограничивающей рамкой. Для каждого прогнозируемого ограничивающего прямоугольника регистрируется "попадание", если прогнозируемый прямоугольник перекрывается с основным прямоугольником истинности на определенную величину (обычно определяемую как пороговое значение, например,  IoU в размере 0,5).
+
 - **The average precision (AP)** for an image is then calculated as the ratio of the number of hits to the total number of predicted bounding boxes. To calculate average precision we use the following steps: 
 1. Sort predictions by decreasing confidence score 
 2. Count the number of true positives (hits) and false positives at each step. 
