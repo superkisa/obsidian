@@ -47,6 +47,16 @@ The mAP value is calculated the following way:
 - To calculate mAP, the process is repeated across all the images in a dataset, and the average precision value is calculated for each class separately 
 - Then, the overall mAP is calculated as the average of mean Average precision across all classes. 
 
+**Затем вычисляется средняя точность (AP)** для изображения как отношение количества просмотров к общему количеству прогнозируемых ограничивающих рамок. Для вычисления средней точности мы используем следующие шаги:
+1. Сортируем прогнозы по убыванию доверительного балла
+2. Подсчитайте количество истинных срабатываний (попаданий) и ложных срабатываний на каждом шаге.
+3. Вычислите точность в каждой точке кривой, где точность определяется как истинные срабатывания / (истинные срабатывания + ложные срабатывания)
+4. Вычислите отзыв в каждой точке кривой, где отзыв определяется как истинные положительные результаты / общее количество объектов, подтверждающих достоверность данных.
+5. Отложите точность по оси y и отзыв по оси x, чтобы сгенерировать кривую точности-отзыва
+6. Вычислите площадь под кривой точности воспроизведения
+- Для вычисления карты процесс повторяется для всех изображений в наборе данных, и среднее значение точности вычисляется для каждого класса отдельно
+- Затем общая mAP вычисляется как среднее значение средней точности по всем классам.
+
 **How mAP is different from precision?** 
 It is different from a simple precision in a way that, average precision gives overall performance of model for all recalls and precisions, whereas precision is only one number representing model performance at a particular recall point. 
 ![[Pasted image 20240112184421.png]]
