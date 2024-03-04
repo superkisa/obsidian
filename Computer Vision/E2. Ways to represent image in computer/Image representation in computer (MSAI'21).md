@@ -7,6 +7,15 @@ Image representation is the process of representing a digital image as a set of 
 
   The numerical values are used to determine the colour of the pixel. 
 
+Представление изображения - это процесс представления цифрового изображения в виде набора чисел. Каждый пиксель представлен числовым значением, которое обычно равно: 
+
+- • unit8, 8-разрядному числу int (0-255). 
+- • float32 - со значениями с плавающей точкой в [0,1] 
+
+  Числовые значения используются для определения цвета пикселя.
+
+
+
 Dimentionality is defined as H, W, N 
 
 H – height 

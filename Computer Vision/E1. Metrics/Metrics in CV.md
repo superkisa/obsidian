@@ -110,7 +110,7 @@ Here are the key concepts of focal loss:
         $FL(p_t)=−(1−p_t)^{\gamma}⋅log⁡(p_t)$
         
         where $p_t$​ is the predicted probability of the true class, and γ is a user-defined focusing parameter. The term $(1−p_t)^γ$ modulates the loss based on the predicted probability, giving higher weight to misclassified examples.
-        
+    
 2. **Handling Class Imbalance:**
     
     - The focal loss is particularly effective in handling class imbalance, as it down-weights the easy-to-classify examples and up-weights the hard-to-classify examples. This is crucial in tasks like object detection, where the number of background regions is much larger than the number of object regions.
@@ -122,3 +122,26 @@ Here are the key concepts of focal loss:
     - The parameter γ is adjustable and allows users to control the level of emphasis given to hard examples. A higher γ puts more focus on misclassified examples.
 
 In summary, the focal loss is designed to address the challenges posed by imbalanced datasets in object detection tasks by assigning varying weights to training examples based on their predicted probabilities. It has proven effective in improving the performance of models on tasks with imbalanced class distributions.
+
+
+Модуляция весов потерь:**
+    
+    - Потеря фокуса вводит модулирующий коэффициент для каждого обучающего примера, который корректирует вклад потерь на основе прогнозируемой вероятности истинного класса. Формула для потери фокуса такова:
+        
+        $FL(p_t)=−(1−p_t)^{\gamma}⋅log⁡(p_t)$
+        
+        где $p_t$ - прогнозируемая вероятность истинного класса, а γ - определяемый пользователем параметр фокусировки. Термин $(1−p_t)^γ$ модулирует потерю на основе прогнозируемой вероятности, придавая больший вес неправильно классифицированным примерам.
+    
+    
+    **Обработка классового дисбаланса:**
+
+- Потеря фокуса особенно эффективна при обработке классового дисбаланса, поскольку снижает вес примеров, которые легко классифицировать, и повышает вес примеров, которые трудно классифицировать. Это имеет решающее значение в таких задачах, как обнаружение объектов, где количество фоновых областей намного больше, чем количество объектных областей.
+
+**Улучшенное обучение для редких классов:**
+
+- Потеря фокуса улучшает способность модели извлекать уроки из редких или малочисленных классов за счет придания большей важности сложным примерам. Это полезно в сценариях, когда определенные классы встречаются в наборе данных реже.
+4. **Настраиваемый параметр фокусировки:**
+
+- Параметр γ настраивается и позволяет пользователям контролировать уровень акцентирования внимания на сложных примерах.Чем выше значение γ, тем больше внимания уделяется неправильно классифицированным примерам.
+
+Таким образом, функция потери фокуса предназначена для решения проблем, связанных с несбалансированными наборами данных в задачах обнаружения объектов, путем присвоения различных весов обучающим примерам на основе их прогнозируемых вероятностей. Она доказала свою эффективность в повышении производительности моделей в задачах с несбалансированным распределением классов.
