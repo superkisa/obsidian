@@ -26,8 +26,14 @@ N – number of channels (3 for RGB, 1 for greyscale) 
 
 The main reason is that you can lose precision with different operations (sum, multiple sum of pixels, etc.). That is, we do all operations on the image in int, and only normalize to 0-1 before feeding it into an NN. 
 
-Image channels. 
+Основная причина заключается в том, что вы можете потерять точность при различных операциях (сумма, кратная сумме пикселей и т.д.). То есть мы выполняем все операции с изображением в int и нормализуем его только до 0-1, прежде чем передавать его в NN.
+
+**Image channels.** 
 
 An image channel is a single-colour component of an image. The most common image channels are red, green, and blue (RGB). 
 
 RGB is a way of encoding colour by using primary colours. It is an additive mix by adding to black colour. Black (0,0,0) white (255, 255, 255) and accordingly all other RGB colours follow the same principle. Mixing all three in a certain proportion gives white.
+
+Канал изображения - это одноцветный компонент изображения. Наиболее распространенными каналами изображения являются красный, зеленый и синий (RGB).
+
+RGB - это способ кодирования цвета с использованием основных цветов. Это аддитивная смесь путем добавления к черному цвету. Черный (0,0,0), белый (255, 255,255) и, соответственно, все остальные цвета RGB следуют тому же принципу. Смешивание всех трех в определенной пропорции дает белый цвет.
