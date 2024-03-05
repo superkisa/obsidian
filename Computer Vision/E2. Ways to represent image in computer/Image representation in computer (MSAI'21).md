@@ -22,6 +22,10 @@ H – height 
 W – width 
 N – number of channels (3 for RGB, 1 for greyscale) 
 
+H – высота
+W – ширина
+N – количество каналов (3 для RGB, 1 для оттенков серого)
+
 **Why do we store pixel values in int and not float?** 
 
 The main reason is that you can lose precision with different operations (sum, multiple sum of pixels, etc.). That is, we do all operations on the image in int, and only normalize to 0-1 before feeding it into an NN. 
