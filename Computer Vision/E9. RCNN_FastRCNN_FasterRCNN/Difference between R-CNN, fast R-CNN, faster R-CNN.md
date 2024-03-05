@@ -1,6 +1,8 @@
 
 R-CNN (Region-Based Convolutional Neural Network), Fast R-CNN, and Faster R-CNN are successive advancements in the evolution of object detection techniques, each introducing improvements over the previous one. Here are the main differences between these three approaches:
 
+R-CNN (сверточная нейронная сеть на основе регионов), Fast R-CNN и еще более быстрый R-CNN являются последовательными достижениями в эволюции методов обнаружения объектов, каждое из которых вносит улучшения по сравнению с предыдущим. Вот основные различия между этими тремя подходами:
+
 ### R-CNN (Region-Based Convolutional Neural Network):
 
 1. **Region Proposals:**
@@ -15,6 +17,20 @@ R-CNN (Region-Based Convolutional Neural Network), Fast R-CNN, and Faster R-CNN 
 4. **Computational Complexity:**
    - **Computationally Expensive:** The separate processing for each region proposal makes R-CNN computationally expensive.
 
+
+### R-CNN (сверточная нейронная сеть на основе регионов):
+
+1. **Предложения регионов:**
+   - ** Внешний метод: ** R-CNN использует внешний метод (выборочный поиск) для предложения потенциальных областей на изображении, которые могут содержать объекты.
+
+2. **Извлечение признаков:**
+   - ** Раздельная обработка: ** Каждая предлагаемая область обрабатывается индивидуально с помощью предварительно обученной сверточной нейронной сети (CNN) для извлечения признаков.
+
+3. **Подход к обучению:**
+   - **Многоступенчатое обучение: ** R-CNN включает в себя отдельные этапы обучения для предложения региона, выделения признаков и классификации объектов.
+
+4. **Вычислительная сложность:**
+   - **Вычислительные затраты: ** Отдельная обработка предложений для каждого региона делает R-CNN дорогостоящим с точки зрения вычислений.
 ### Fast R-CNN:
 
 1. **Region Proposals:**
