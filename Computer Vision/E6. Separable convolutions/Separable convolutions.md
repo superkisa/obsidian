@@ -1,4 +1,8 @@
+Разделяемые свертки
+
 Separable convolutions are a type of convolutional operation that decomposes a standard convolution into two simpler operations: a depthwise convolution and a pointwise convolution. This decomposition reduces the number of parameters and computations, making the model more efficient and potentially faster to train and run.
+
+Разделяемые свертки - это тип сверточной операции, которая разлагает стандартную свертку на две более простые операции: глубинную свертку и поточечную свертку. Такая декомпозиция сокращает количество параметров и вычислений, делая модель более эффективной и потенциально более быстрой в обучении и запуске.
 
 Here's a breakdown of the two components of separable convolutions:
 
@@ -12,6 +16,20 @@ Here's a breakdown of the two components of separable convolutions:
     - After the depthwise convolution, a pointwise convolution (1x1 convolution) is applied. This operation uses 1x1 filters to combine information from different channels.
     - Pointwise convolution helps capture complex relationships between channels, allowing the network to model more abstract features.
     - The output of the pointwise convolution has a different number of channels, which can be adjusted based on the desired model architecture.
+
+
+**Свертка по глубине:**
+    
+    - В стандартной свертке каждый входной канал свертывается с помощью другого фильтра, что приводит к отдельному набору выходных каналов. Свертка по глубине, с другой стороны, применяет отдельный фильтр для каждого входного канала независимо. По сути, он выполняет пространственную свертку независимо для каждого входного канала.
+    - Эта операция уменьшает количество параметров по сравнению со стандартной сверткой, поскольку на каждый входной канал приходится только один набор фильтров.
+    - Выходной сигнал глубинной свертки имеет то же количество каналов, что и входной.
+2. **Поточечная свертка:**
+    
+    - После свертки по глубине применяется поточечная свертка (свертка 1x1). В этой операции используются фильтры 1x1 для объединения информации из разных каналов.
+    - Поточечная свертка помогает фиксировать сложные взаимосвязи между каналами, позволяя сети моделировать более абстрактные объекты.
+    - Выходные данные поточечной свертки содержат различное количество каналов, которое может быть скорректировано в зависимости от желаемой архитектуры модели.
+
+
 
 The overall operation of a separable convolution is the composition of these two steps: depthwise convolution followed by pointwise convolution. By separating spatial and channel-wise information, separable convolutions reduce the number of parameters and computations, leading to a more efficient and lightweight model.
 
