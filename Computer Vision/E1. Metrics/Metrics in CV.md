@@ -98,6 +98,11 @@ Due to these limitations, the authors of YOLO v3 propose to use an alternative d
 
 In summary, mAP is a versatile metric in computer vision, providing a comprehensive evaluation of models for tasks like object detection and instance segmentation. Its use is prevalent in research, competitions, and benchmarking in the computer vision community.
 
+mAP обеспечивает целостную оценку производительности модели, учитывая как точность, так и запоминаемость.
+- Она помогает оценить, насколько хорошо модель обобщается для разных классов и разных уровней сложности.
+
+Таким образом, mAP - это универсальная метрика в компьютерном зрении, обеспечивающая всестороннюю оценку моделей для таких задач, как обнаружение объектов и сегментация экземпляров. Ее использование широко распространено в исследованиях, конкурсах и сравнительном анализе в сообществе компьютерного зрения.
+
 #### Dice Similarity Coefficient (DSC) 
 DSC - a measure of the similarity between the predicted segmentation and the ground truth segmentation. It is usually calculated between two binary masks, the predicted mask and the ground truth mask:  
 
