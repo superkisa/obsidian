@@ -59,6 +59,12 @@ This works faster, but disadvantage is that we can't change number of channels..
 
 If you don;t want to overfit model with small data, use depthwise convolution
 
+Здесь у нас меньше весов.
+
+Это работает быстрее, но недостатком является то, что мы не можем изменить количество каналов..(
+
+Если вы не хотите перегружать модель небольшими данными, используйте свертку по глубине
+
 ![[Pasted image 20240111181618.png]]
 
 This approach used in ResNet, for instance.
