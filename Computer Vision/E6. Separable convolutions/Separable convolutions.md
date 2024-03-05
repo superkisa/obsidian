@@ -35,6 +35,10 @@ The overall operation of a separable convolution is the composition of these two
 
 This technique is often used in deep learning architectures, particularly in mobile and edge devices where computational resources are limited, and efficiency is crucial. Separable convolutions are a key component in architectures like MobileNet and Xception.
 
+
+Общая операция разделяемой свертки представляет собой совокупность этих двух этапов: свертка по глубине, за которой следует поточечная свертка. Разделяя пространственную информацию и информацию о каналах, разделяемые свертки сокращают количество параметров и вычислений, что приводит к созданию более эффективной и облегченной модели.
+
+Этот метод часто используется в архитектурах глубокого обучения, особенно в мобильных и периферийных устройствах, где вычислительные ресурсы ограничены, а эффективность имеет решающее значение. Разделяемые свертки являются ключевым компонентом в таких архитектурах, как Mobile Net и Exception.
 ----------------------------------------------
 
 Let's suppose that we have kernel and can transform kernel in such way 
