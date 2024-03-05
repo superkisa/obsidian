@@ -29,10 +29,15 @@
 **Simple explanation**
 Kullback-Leibler (KL) Divergence, often referred to as KL Divergence or relative entropy, is a measure of how one probability distribution diverges from a second, expected probability distribution. In simple terms, it tells us how different two probability distributions are from each other.
 
+**Простое объяснение**
+Дивергенция Кульбака-Лейблера (KL), часто называемая дивергенцией KL или относительной энтропией, является мерой того, насколько одно распределение вероятностей отличается от второго, ожидаемого распределения вероятностей. Простыми словами, это говорит нам о том, насколько два распределения вероятностей отличаются друг от друга.
+
 Now, let's talk about its relation to cross-entropy:
 
 ### Cross-Entropy:
 Cross-entropy is a concept commonly used in machine learning, especially in classification tasks. It measures the difference between two probability distributions while considering the labels or true probabilities of the events. The formula for cross-entropy between two probability distributions \( P \) and \( Q \) is:
+
+Перекрестная энтропия - это концепция, обычно используемая в машинном обучении, особенно в задачах классификации. Она измеряет разницу между двумя распределениями вероятностей при рассмотрении меток или истинных вероятностей событий. Формула для перекрестной энтропии между двумя распределениями вероятностей \(P\) и \(Q\) является:
 
 $$ H(P, Q) = - \sum_{i} P(i) \cdot \log(Q(i)) $$
 
