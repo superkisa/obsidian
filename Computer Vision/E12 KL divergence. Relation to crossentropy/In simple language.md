@@ -44,6 +44,8 @@ $$ H(P, Q) = - \sum_{i} P(i) \cdot \log(Q(i)) $$
 ### KL Divergence:
 KL Divergence is related to cross-entropy but focuses on measuring the extra amount of information needed to encode events from one distribution when using the optimal code for another distribution. The formula for KL Divergence from \( P \) to \( Q \) is:
 
+Расхождение KL связано с перекрестной энтропией, но фокусируется на измерении дополнительного объема информации, необходимого для кодирования событий из одного распределения при использовании оптимального кода для другого распределения. Формула для расхождения KL от \(P\) до \(Q\) такова:
+
 $$ D_{KL}(P \parallel Q) = \sum_{i} P(i) \cdot \log\left(\frac{P(i)}{Q(i)}\right) $$
 
 ### Relation:
@@ -57,3 +59,15 @@ $$ H(P, Q) = H(P) + D_{KL}(P \parallel Q) $$
 In simpler terms, when you calculate cross-entropy, you can think of it as two components: how surprised you are on average (entropy) and how much extra you need to know about \( P \) to encode it optimally using \( Q \) (KL Divergence). The KL Divergence term captures the extra information needed to move from one distribution to another.
 
 In practical terms, minimizing cross-entropy during training often translates to making the predicted probability distribution (Q) as close as possible to the true distribution (P), which is a common goal in many machine learning tasks.
+
+
+Ключевая связь заключается в том, что перекрестная энтропия между \(P\) и \(Q\) состоит из двух частей: энтропии \(P\) и расхождения KL от \(P\) до \(Q\). Формула для перекрестной энтропии может быть выражена следующим образом:
+
+$$ H(P, Q) = H(P) + D_{KL}(P \параллельно Q) $$
+
+- \(H(P)\) - энтропия распределения \(P\).
+- $$D_{KL}(P \ параллельно Q) $$ - это расхождение KL от \(P\) до \(Q\).
+
+Проще говоря, когда вы вычисляете перекрестную энтропию, вы можете думать о ней как о двух компонентах: насколько вы удивлены в среднем (энтропия) и сколько еще вам нужно знать о \ (P\), чтобы оптимально закодировать ее, используя \(Q\) (расхождение KL). Термин "Дивергенция KL" отражает дополнительную информацию, необходимую для перехода от одного распределения к другому.
+
+На практике минимизация перекрестной энтропии во время обучения часто приводит к тому, что прогнозируемое распределение вероятностей (Q) максимально приближается к истинному распределению (P), что является общей целью во многих задачах машинного обучения.
