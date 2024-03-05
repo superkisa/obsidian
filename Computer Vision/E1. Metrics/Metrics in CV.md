@@ -25,6 +25,20 @@ bounding box but inside an expanded bounding box that is larger than the ground 
 certain factor.),  
 *IoU* is the standard intersection over union  
 *Union(Bbox,Context)* is the union between *Bbox* and *Context*.
+
+
+Обобщенный Вы (Go) учитывает не только перекрытие между предсказанным
+ограничивающим прямоугольником и основным ограничивающим прямоугольником истинности, но также перекрытие между предсказанным
+ограничивающим прямоугольником и окружающим контекстом.
+$$
+Giu = Iu - (Объединение(Bbox,контекст) - Bbox)
+$$
+*Bbox* - прогнозируемая ограничивающая рамка,
+*Контекст* - это окружающий контекст (обычно определяется как область за пределами основного
+ограничивающего прямоугольника, но внутри расширенного ограничивающего прямоугольника, который больше основного на
+определенный коэффициент.),
+**Вы* - стандартное пересечение над объединением
+*Union(Bbox,Context)* - это объединение между *Bbox* и *Context*.
 ![[Pasted image 20240113133601.png]]
 ## mAP
 https://learnopencv.com/mean-average-precision-map-object-detection-model-evaluation-metric/#What-is-Mean-Average-Precision-(mAP)?
