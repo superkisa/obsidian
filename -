@@ -1,0 +1,12 @@
+# Since Windows and Linux use different default line endings, Git may report 
+# a large number of modified files that have no differences aside from their 
+# line endings. To prevent this from happening, you can disable line ending 
+# conversion using a .gitattributes file or globally on the Windows side.
+
+# Typically adding or modifying a .gitattributes file in your repository is the 
+# most reliable way to solve this problem. Committing this file to source control 
+# will help others and allows you to vary behaviors by repository as appropriate.
+
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
